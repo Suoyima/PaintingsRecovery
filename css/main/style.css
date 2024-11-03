@@ -58,7 +58,7 @@ html, body{
 	z-index: 1;
 }
 
-.buttonMusic{
+#buttonMusic{
 	position: absolute;
 	top: 14%;
 	right: 3.5%;
