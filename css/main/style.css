@@ -24,8 +24,8 @@ html, body{
 
 .title{
 	position: absolute;
-    top: 25px;
-    left: 20px;
+    top: 2%;
+    left: 3%;
 	width: 32%;
 	height: 4.5%;
     z-index: 1;
@@ -33,8 +33,81 @@ html, body{
 
 .progressBar{
 	position: absolute;
-	top: 95px;
-	left: 25px;
+	top: 7.5%;
+	left: 4%;
 	width: 31%;
 	height: 3%;
+	z-index: 1;
+}
+
+.close{
+	position: absolute;
+	top: 2.5%;
+	right: 2.5%;
+	width: 20%;
+	height: 3.5%;
+	z-index: 1;
+}
+
+.buttonPrompt{
+	position: absolute;
+	top: 8%;
+	right: 3.5%;
+	width: 10%;
+	height: 6%;
+	z-index: 1;
+}
+
+.buttonMusic{
+	position: absolute;
+	top: 14%;
+	right: 3.5%;
+	width: 10%;
+	height: 6%;
+	z-index: 1;
+}
+
+.groupFirst{
+	position: absolute;
+	bottom: 5.7%;
+	left: 2.7%;
+	width: 29%;
+	height: 29%;
+	z-index: 2;
+}
+
+.groupSecond{
+	position: absolute;
+	bottom: 6%;
+	left: 27%;
+	width: 47%;
+	height: 38%;
+	z-index: 1;
+}
+
+.groupThird{
+	position: absolute;
+	bottom: 32.8%;
+	left: 14%;
+	width: 25%;
+	height: 21.5%;
+	z-index: 2;
+}
+
+.groupFourth{
+	position: absolute;
+	bottom: 10.7%;
+	right: 3%;
+	width: 36%;
+	height: 20.5%;
+	z-index: 2;
+}
+
+.groupFifth{
+	position: absolute;
+	bottom: 37.5%;
+	right: 1%;
+	width: 30.5%;
+	height: 27%;
+	z-index: 2;
 }
