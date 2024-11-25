@@ -38,7 +38,7 @@ html, body{
 	z-index: 2;
 }
 
-.curtian{
+.curtain{
 	position: absolute;
 	top: 4%;
 	left: 2%;
@@ -60,7 +60,7 @@ html, body{
 	left: 50%;
 	width: 48%;
 	transform: translate(-50%, -50%);
-	z-index: 2;
+	z-index: 1;
 	transition: all 1s ease;
 }
 
@@ -73,6 +73,7 @@ html, body{
   	perspective:1000px;
   	transform-style:preserve-3d;
  	perspective-origin:50% 25%;
+	z-index: 2;
 }
 
 #doorLeft{
@@ -80,7 +81,6 @@ html, body{
 	top: 0%;
 	left: 0%;
 	width: 50%;
-	z-index: 2;
 	transform-origin: left;
 	transition: all 2s ease;
 }
@@ -90,35 +90,24 @@ html, body{
 	top: 0%;
 	right: 0%;
 	width: 50%;
-	z-index: 2;
 	transform-origin: right;
 	transition: all 2s ease;
 }
 
 @media (max-aspect-ratio: 9/16){
 	.buttonShare{
-		position: absolute;
-		top: 8%;
-		right: 3.5%;
 		width: 14%;
-		z-index: 1;
+		z-index: 2;
 	}
 	
 	#buttonMusic{
-		position: absolute;
-		top: 15%;
-		right: 3.5%;
+		top: 16%;
 		width: 14%;
-		z-index: 1;
+		z-index: 2;
 	}
 	
 	.buttonStart{
-		position: absolute;
 		bottom: 17%;
-		left: 50%;
-		width: 48%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
 	}
 	
 	#doorLeft{
