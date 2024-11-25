@@ -32,7 +32,7 @@ html, body{
 
 #buttonMusic{
 	position: absolute;
-	top: 17%;
+	top: 15%;
 	right: 3.5%;
 	width: 10%;
 	z-index: 2;
@@ -106,7 +106,7 @@ html, body{
 	
 	#buttonMusic{
 		position: absolute;
-		top: 16%;
+		top: 15%;
 		right: 3.5%;
 		width: 14%;
 		z-index: 1;
