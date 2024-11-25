@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<title>古画修复室</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
-		<link rel="stylesheet" href="css/main/style.css" type="text/css" />
-		
+		<link rel="stylesheet" href="css/index/style.css" type="text/css" />
 	</head>
 	<body>
 		<div class="container">
-			<img class="bgimg" src="images/main/background.png" alt="背景图" />
-			<img class="title" src="images/main/title.png" alt="标题" />
-			<img class="progressBar" src="images/main/progressBar.png" alt="进度条" />
-			<img class="close" src="images/main/close.png" alt="退出" />
-			<img class="buttonPrompt" src="images/main/buttonPrompt.png" alt="提示" />
-			<img id="buttonMusic" src="images/main/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()"/>
-			<img class="groupFirst" src="images/main/groupFirst.png" alt="任务一" onclick="navigateTo('task1.html')" />
-			<img class="groupSecond" src="images/main/groupSecond.png" alt="任务二" onclick="navigateTo('task2.html')" />
-			<img class="groupThird" src="images/main/groupThird.png" alt="任务三" onclick="navigateTo('task3.html')" />
-			<img class="groupFourth" src="images/main/groupFourth.png" alt="任务四" onclick="navigateTo('task4.html')" />
-			<img class="groupFifth" src="images/main/groupFifth.png" alt="任务五" onclick="navigateTo('task5.html')" />
+			<img class="background" src="images/index/background.png" alt="背景图" />
+			<img class="buttonShare" src="images/index/buttonShare.png" alt="分享" />
+			<img id="buttonMusic" src="images/index/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()"/>
+			<img class="curtian" src="images/index/curtain.png" alt="窗帘" />
+			<img class="windchime" src="images/index/windchime.png" alt="风铃" />
+			<img class="buttonStart" src="images/index/buttonStart.png" alt="开始" onclick="AnimaAndRedirect()"/>
+			<div class="view_box">
+				<img id="doorLeft" src="images/index/doorLeft.png" alt="左门" />
+				<img id="doorRight" src="images/index/doorRight.png" alt="右门" />
+			</div>
 		</div>
 		
 		<audio id="backgroundMusic" loop>
@@ -28,6 +26,6 @@
 			该浏览器版本过旧，不支持audio标签，无法播放音乐。
 		</audio>
 		
-		<script src="js/main/script.js"></script>
+		<script src="js/index/script.js"></script>
 	</body>
 </html>

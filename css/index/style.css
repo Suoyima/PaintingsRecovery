@@ -1,0 +1,131 @@
+html, body{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	position: relative;
+	width: fit-content;
+	max-width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.background{
+	max-width: 100%;
+	max-height: 100%;
+	height: 100vh;
+}
+
+.buttonShare{
+	position: absolute;
+	top: 8%;
+	right: 3.5%;
+	width: 10%;
+	z-index: 2;
+}
+
+#buttonMusic{
+	position: absolute;
+	top: 15%;
+	right: 3.5%;
+	width: 10%;
+	z-index: 2;
+}
+
+.curtian{
+	position: absolute;
+	top: 4%;
+	left: 2%;
+	width: 51%;
+	z-index: 1;
+}
+
+.windchime{
+	position: absolute;
+	top: 5%;
+	left: 17%;
+	width: 9%;
+	z-index: 1;
+}
+
+.buttonStart{
+	position: absolute;
+	bottom: 17%;
+	left: 50%;
+	width: 48%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	transition: all 1s ease;
+}
+
+.view_box{
+    position:absolute;
+	top: 0%;
+	left: 0%;
+  	width:100%;
+  	height:100%;
+  	perspective:1000px;
+  	transform-style:preserve-3d;
+ 	perspective-origin:50% 25%;
+}
+
+#doorLeft{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	z-index: 2;
+	transform-origin: left;
+	transition: all 2s ease;
+}
+
+#doorRight{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 50%;
+	z-index: 2;
+	transform-origin: right;
+	transition: all 2s ease;
+}
+
+@media (max-aspect-ratio: 9/16){
+	.buttonShare{
+		position: absolute;
+		top: 8%;
+		right: 3.5%;
+		width: 14%;
+		z-index: 1;
+	}
+	
+	#buttonMusic{
+		position: absolute;
+		top: 15%;
+		right: 3.5%;
+		width: 14%;
+		z-index: 1;
+	}
+	
+	.buttonStart{
+		position: absolute;
+		bottom: 17%;
+		left: 50%;
+		width: 48%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	
+	#doorLeft{
+		height: 100%;
+	}
+
+	#doorRight{
+		height: 100%;
+	}
+}
