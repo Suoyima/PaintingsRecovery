@@ -97,13 +97,11 @@ html, body{
 @media (max-aspect-ratio: 9/16){
 	.buttonShare{
 		width: 14%;
-		z-index: 2;
 	}
 	
 	#buttonMusic{
 		top: 16%;
-    width: 14%;
-		z-index: 2;
+		width: 14%;
 	}
 	
 	.buttonStart{
