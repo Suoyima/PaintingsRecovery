@@ -27,7 +27,7 @@ html, body{
 	top: 8%;
 	right: 3.5%;
 	width: 10%;
-	z-index: 2;
+	z-index: 3;
 }
 
 #buttonMusic{
@@ -35,7 +35,7 @@ html, body{
 	top: 15%;
 	right: 3.5%;
 	width: 10%;
-	z-index: 2;
+	z-index: 3;
 }
 
 .curtain{
@@ -60,7 +60,7 @@ html, body{
 	left: 50%;
 	width: 48%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
+	z-index: 2;
 	transition: all 1s ease;
 }
 
@@ -97,13 +97,11 @@ html, body{
 @media (max-aspect-ratio: 9/16){
 	.buttonShare{
 		width: 14%;
-		z-index: 2;
 	}
 	
 	#buttonMusic{
 		top: 16%;
 		width: 14%;
-		z-index: 2;
 	}
 	
 	.buttonStart{

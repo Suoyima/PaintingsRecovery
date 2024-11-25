@@ -15,13 +15,22 @@ function navigateTo(pageUrl) {
     window.location.href = pageUrl;
 }
 
-window.onload=function(){
-	document.getElementById("doorLeft").style.transform = "rotatey(80deg)";
-	document.getElementById("doorRight").style.transform = "rotatey(-80deg)";
+window.onload = function openDoor() {
+    var doorLeft = document.getElementById("doorLeft");
+    var doorRight = document.getElementById("doorRight");
+    var buttonStart = document.querySelector('.buttonStart');
+
+    doorLeft.style.transform = "rotateY(80deg)";
+    doorRight.style.transform = "rotateY(-80deg)";
+	
+    setTimeout(function() {
+        buttonStart.style.zIndex = 3;
+    }, 2000);
 }
 
 function AnimaAndRedirect() {
     var button = document.querySelector('.buttonStart');
+        
     button.src = "images/index/buttonStartAnima.png";
 	
     setTimeout(function() {
