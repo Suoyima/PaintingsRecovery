@@ -92,8 +92,8 @@ html, body{
 	left: 13.7%;
 	bottom: 0%;
 	z-index: 3;
-	height: 18%;
-	width: 26.2%;
+	height: 10%;
+	width: auto;
 }
 
 .exlplain{
@@ -112,13 +112,14 @@ html, body{
 @media (max-aspect-ratio: 9/16){
 	.water{
 		top:6.6%;
-		height: 74.7%;
+		height: 93.4%;
 	}
 	.painting{
 		top:6.6%;
 		height: 93.4%;
 	}
-	.dock_kettle{
+	/* .dock_kettle{
 		height: 18.3%;
-	}
+		width: auto;
+	} */
 }
