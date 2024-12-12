@@ -15,25 +15,33 @@ function navigateTo(pageUrl) {
     window.location.href = pageUrl;
 }
 
-window.onload = function openDoor() {
-    var doorLeft = document.getElementById("doorLeft");
-    var doorRight = document.getElementById("doorRight");
-    var buttonStart = document.querySelector('.buttonStart');
+function AnimaAndRedirect() {
+    var button = document.querySelector('.buttonStart');
 
-    doorLeft.style.transform = "rotateY(80deg)";
-    doorRight.style.transform = "rotateY(-80deg)";
-	
     setTimeout(function() {
-        buttonStart.style.zIndex = 3;
+        navigateTo('mainPage.html');
     }, 2000);
 }
 
-function AnimaAndRedirect() {
-    var button = document.querySelector('.buttonStart');
-        
-    button.src = "images/index/buttonStartAnima.png";
+// window.onload = function openDoor() {
+//     var doorLeft = document.getElementById("doorLeft");
+//     var doorRight = document.getElementById("doorRight");
+//     var buttonStart = document.querySelector('.buttonStart');
+
+//     doorLeft.style.transform = "rotateY(85deg)";
+//     doorRight.style.transform = "rotateY(-85deg)";
 	
-    setTimeout(function() {
-        window.location.href = 'mainPage.html';
-    }, 1000);
-}
+//     setTimeout(function() {
+//         buttonStart.style.zIndex = 3;
+//     }, 2000);
+// }
+
+// function AnimaAndRedirect() {
+//     var button = document.querySelector('.buttonStart');
+        
+//     button.src = "images/index/buttonStartAnima.png";
+	
+//     setTimeout(function() {
+//         window.location.href = 'mainPage.html';
+//     }, 1000);
+// }
