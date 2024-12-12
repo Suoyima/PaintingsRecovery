@@ -97,8 +97,8 @@ html, body{
 
 #bucket{
 	position: absolute;
-	bottom: 35%;
-	right: 15%;
+	bottom: 27%;
+	right: 6%;
 	width: 32.5%;
 	z-index: 2;
 }
@@ -107,7 +107,7 @@ html, body{
 	position: absolute;
 	bottom: 0%;
 	left: 0%;
-	width: 30.5%;
+	width: 31%;
 	z-index: 2;
 }
 
@@ -115,7 +115,7 @@ html, body{
 	position: absolute;
 	bottom: 0%;
 	right: 0%;
-	width: 16%;
+	width: 17%;
 	z-index: 2;
 }
 
@@ -161,6 +161,37 @@ html, body{
 	
 	.buttonStart{
 		bottom: 17%;
+	}
+	
+	#window{
+		top: 5%;
+		width: 41%;
+	}
+	
+	.curtain{
+		top: 6%;
+		width: 53%;
+	}
+	
+	.windchime{
+		top: 7.5%;
+		left: 17%;
+	}
+	
+	#painting{
+		top: 8%;
+	}
+	
+	#table{
+		bottom: 25%;
+	}
+	
+	#kettle{
+		bottom: 52%;
+	}
+	
+	#bucket{
+		bottom: 30%;
 	}
 	
 	#doorLeft{
