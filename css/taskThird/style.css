@@ -85,3 +85,25 @@ html, body{
 	width: 12%;
 	z-index: 1;
 }
+
+@media (max-aspect-ratio: 9/16){
+	#buttonPrompt{
+		top: 3.4%;
+	}
+	
+	#lensO{
+		top: 33.5%;
+	}
+	
+	#buttonViewOpen{
+		top: 8%;
+	}
+	
+	#wheelC{
+		top: 30%;
+	}
+	
+	#wheelF{
+		top: 38%;
+	}
+}
