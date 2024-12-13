@@ -10,17 +10,12 @@ var back_button=document.querySelector('.close_button');
 var towel_sp=document.querySelector('.towel_sp');
 var brush_sp=document.querySelector('.row_brush_sp');
 var dirt = document.querySelector('.dirt');
-
 var clickcount_kettle = 0;
 var clickcount_brush = 0;
 var clickcount_towel = 0;
 
 
-
-
-
-
-button.addEventListener('click', function(){
+kettle_sp.addEventListener('click', function(){
     water.style.opacity='1';
     setTimeout(function(){
         kettle_sp.style.display='none';
@@ -30,9 +25,6 @@ button.addEventListener('click', function(){
         towel.style.display='block';
     },2000);
 })
-
-
-
 
 
 back_button.addEventListener('click',function(){
