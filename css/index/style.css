@@ -60,6 +60,20 @@ html, body{
 	left: 16%;
 	width: 9.5%;
 	z-index: 2;
+	animation: swing 3s linear infinite;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: 0 0;
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
 }
 
 #painting{
@@ -92,7 +106,12 @@ html, body{
 	left: 50%;
 	width: 48%;
 	transform: translate(-50%, -50%);
+	transition: transform 0.1s;
 	z-index: 2;
+}
+
+.buttonStart.clicked {
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 #bucket{
@@ -103,23 +122,7 @@ html, body{
 	z-index: 2;
 }
 
-#doorLeft{
-	position: absolute;
-	bottom: 0%;
-	left: 0%;
-	width: 31%;
-	z-index: 2;
-}
-
-#doorRight{
-	position: absolute;
-	bottom: 0%;
-	right: 0%;
-	width: 17%;
-	z-index: 2;
-}
-
-/* .view_box{
+.view_box{
     position:absolute;
 	top: 0%;
 	left: 0%;
@@ -129,9 +132,9 @@ html, body{
   	transform-style:preserve-3d;
  	perspective-origin:50% 25%;
 	z-index: 2;
-} */
+}
 
-/* #doorLeft{
+#doorLeft{
 	position: absolute;
 	top: 0%;
 	left: 0%;
@@ -147,7 +150,7 @@ html, body{
 	width: 50%;
 	transform-origin: right;
 	transition: all 2s ease;
-} */
+}
 
 @media (max-aspect-ratio: 9/16){
 	.buttonShare{
@@ -161,6 +164,11 @@ html, body{
 	
 	.buttonStart{
 		bottom: 17%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.buttonStart.clicked {
+	    transform: translate(-50%, -50%) scale(0.9);
 	}
 	
 	#window{
