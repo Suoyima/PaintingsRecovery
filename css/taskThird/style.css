@@ -46,9 +46,17 @@ html, body{
 	z-index: 1;
 }
 
+#buttonMusic{
+	position: absolute;
+	top: 2.2%;
+	right: 12%;
+	width: 7%;
+	z-index: 1;
+}
+
 #lensO{
 	position: absolute;
-	top: 36%;
+	top: 39%;
 	right: 21%;
 	width: 27%;
 	z-index: 1;
@@ -72,7 +80,7 @@ html, body{
 
 #wheelC{
 	position: absolute;
-	top: 34%;
+	top: 35%;
 	right: 18%;
 	width: 11.5%;
 	z-index: 1;
@@ -80,8 +88,122 @@ html, body{
 
 #wheelF{
 	position: absolute;
-	top: 45%;
+	top: 45.5%;
 	right: 18%;
 	width: 12%;
 	z-index: 1;
+}
+
+#pieceSelectBox{
+	position: absolute;
+	bottom: 3%;
+	left: 50%; 
+	transform: translateX(-50%);
+	width: 89%;
+	z-index: 2;
+}
+
+#pieceFirst{
+	position: absolute;
+	bottom: 4%;
+	left: 12%;
+	width: 22%;
+	z-index: 3;
+}
+
+#pieceSecond{
+	position: absolute;
+	bottom: 4%;
+	left: 38%;
+	width: 12.5%;
+	z-index: 3;
+}
+
+#pieceThird{
+	position: absolute;
+	bottom: 4%;
+	right: 34%;
+	width: 11%;
+	z-index: 3;
+}
+
+#pieceFourth{
+	position: absolute;
+	bottom: 4%;
+	right: 13%;
+	width: 17%;
+	z-index: 3;
+}
+
+#pieceProfile{
+	position: absolute;
+	bottom: 19%;
+	left: 6%;
+	width: 49.5%;
+	z-index: 2;
+}
+
+#buttonSelect{
+	position: absolute;
+	bottom: 20.5%;
+	left: 31%;
+	transform: translateX(-50%);
+	width: 19%;
+	z-index: 2;
+}
+
+#pieceSelecting{
+	position: absolute;
+	bottom: 42%;
+	left: 31%;
+	transform: translateX(-50%) scale(2);
+	z-index: 3;
+}
+
+#view{
+	position: absolute;
+	top: 10%;
+	left: 4.5%;
+	width: 59%;
+	z-index: 3;
+}
+
+@media (max-aspect-ratio: 9/16){
+	#buttonPrompt{
+		top: 3.4%;
+	}
+	
+	#buttonMusic{
+		top: 2.1%;
+		right: 13%;
+	}
+	
+	#lensO{
+		top: 38.5%;
+	}
+	
+	#microscope{
+		top: 23%;
+	}
+	
+	#buttonViewOpen{
+		top: 13%;
+	}
+	
+	#wheelC{
+		top: 35%;
+	}
+	
+	#wheelF{
+		top: 43%;
+	}
+	
+	#pieceSelecting{
+		bottom: 34%;
+		transform: translateX(-50%) scale(1.2);
+	}
+	
+	#view{
+		top: 15%;
+	}
 }
