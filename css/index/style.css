@@ -22,191 +22,74 @@ html, body{
 	height: 100vh;
 }
 
-.buttonShare{
+.bar{
 	position: absolute;
-	top: 8%;
-	right: 3.5%;
-	width: 10%;
-	z-index: 3;
-}
-
-#buttonMusic{
-	position: absolute;
-	top: 15%;
-	right: 3.5%;
-	width: 10%;
-	z-index: 3;
-}
-
-#window{
-	position: absolute;
-	top: 2.5%;
-	left: 0%;
-	width: 41%;
-	z-index: 1;
-}
-
-.curtain{
-	position: absolute;
-	top: 4%;
-	left: 0%;
-	width: 52%;
-	z-index: 2;
-}
-
-.windchime{
-	position: absolute;
-	top: 6%;
-	left: 16%;
-	width: 9.5%;
-	z-index: 2;
-	animation: swing 3s linear infinite;
-}
-
-@keyframes swing {
-    0%, 100% {
-        transform: rotate(0deg);
-        transform-origin: 0 0;
-    }
-    25% {
-        transform: rotate(-10deg);
-    }
-    75% {
-        transform: rotate(10deg);
-    }
-}
-
-#painting{
-	position: absolute;
-	top: 4%;
-	right: 12%;
-	width: 30%;
-	z-index: 1;
-}
-
-#table{
-	position: absolute;
-	bottom: 10%;
-	left: 0%;
-	width: 81%;
-	z-index: 1;
-}
-
-#kettle{
-	position: absolute;
-	bottom: 46%;
-	left: 14%;
-	width: 22%;
-	z-index: 2;
-}
-
-.buttonStart{
-	position: absolute;
-	bottom: 17%;
+	bottom: 5%;
 	left: 50%;
-	width: 48%;
+	width: 70%;
+	height: 5.2%;
 	transform: translate(-50%, -50%);
-	transition: transform 0.1s;
+}
+
+#barLeft{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 18.3%;
 	z-index: 2;
 }
 
-.buttonStart.clicked {
-    transform: translate(-50%, -50%) scale(0.9);
+#barRight{
+	position: absolute;
+	right: 76%;
+	top: 1px;
+	width: 18.3%;
+	z-index: 2;
 }
 
-#bucket{
+#clip-container{
 	position: absolute;
-	bottom: 27%;
+	left: 4%;
+	top: 19%;
+	width: 81%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#barMid{
+	position: absolute;
+	left: -92%;
+	top: 0%;
+	width: 100%;
+}
+
+@font-face {
+	font-family: 'BaoLi';
+	src: url('BaoLi-simplified-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#barPrompt{
+	position: absolute;
+	left: 3%;
+	bottom: 0%;
+	font-family: 'BaoLi', sans-serif;
+	color: #64523e;
+	font-size: 2vh;
+}
+
+#barNum{
+	position: absolute;
 	right: 6%;
-	width: 32.5%;
-	z-index: 2;
-}
-
-.view_box{
-    position:absolute;
-	top: 0%;
-	left: 0%;
-  	width:100%;
-  	height:100%;
-  	perspective:1000px;
-  	transform-style:preserve-3d;
- 	perspective-origin:50% 25%;
-	z-index: 2;
-}
-
-#doorLeft{
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 50%;
-	transform-origin: left;
-	transition: all 2s ease;
-}
-
-#doorRight{
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	width: 50%;
-	transform-origin: right;
-	transition: all 2s ease;
+	bottom: 0%;
+	font-family: 'BaoLi', sans-serif;
+	color: #64523e;
+	font-size: 2vh;
 }
 
 @media (max-aspect-ratio: 9/16){
-	.buttonShare{
-		width: 14%;
-	}
-	
-	#buttonMusic{
-		top: 16%;
-		width: 14%;
-	}
-	
-	.buttonStart{
-		bottom: 17%;
-		transform: translate(-50%, -50%);
-	}
-	
-	.buttonStart.clicked {
-	    transform: translate(-50%, -50%) scale(0.9);
-	}
-	
-	#window{
-		top: 5%;
-		width: 41%;
-	}
-	
-	.curtain{
-		top: 6%;
-		width: 53%;
-	}
-	
-	.windchime{
-		top: 7.5%;
-		left: 17%;
-	}
-	
-	#painting{
-		top: 8%;
-	}
-	
-	#table{
-		bottom: 25%;
-	}
-	
-	#kettle{
-		bottom: 52%;
-	}
-	
-	#bucket{
-		bottom: 30%;
-	}
-	
-	#doorLeft{
-		height: 100%;
-	}
-
-	#doorRight{
-		height: 100%;
+	#clip-container{
+		top: 13%;
 	}
 }
