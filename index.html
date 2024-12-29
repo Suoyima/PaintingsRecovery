@@ -2,34 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>古画修复室</title>
+		<title>古画新颜——宋画修复与文化重生</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
 		<link rel="stylesheet" href="css/index/style.css" type="text/css" />
+		<script src="js/jquery-3.7.1.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<img class="background" src="images/index/background.png" alt="背景图" />
-			<img class="buttonShare" src="images/index/buttonShare.png" alt="分享" />
-			<img id="buttonMusic" src="images/index/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()"/>
-			<img id="window" src="images/index/window.png" alt="窗户" />
-			<img id="painting" src="images/index/painting.png" alt="墙上的画" />
-			<img id="table" src="images/index/table.png" alt="桌子" />
-			<img id="kettle" src="images/index/kettle.png" alt="水壶" />
-			<img class="curtain" src="images/index/curtain.png" alt="窗帘" />
-			<img class="windchime" src="images/index/windchime.png" alt="风铃" />
-			<img class="buttonStart" src="images/index/buttonStart.png" alt="开始" />
-			<img id="bucket" src="images/index/bucket.png" alt="桶" />
-			<div class="view_box">
-				<img id="doorLeft" src="images/index/doorLeft.png" alt="左门" />
-				<img id="doorRight" src="images/index/doorRight.png" alt="右门" />
+			
+			<div class="bar">
+				<img id="barLeft" src="images/index/barLeft.png" alt="卷轴左" />
+				<img id="barRight" src="images/index/barRight.png" alt="卷轴右" />
+				<div id="clip-container">
+					<img id="barMid" src="images/index/barMid.png" alt="卷画" />
+				</div>
+				<div id="barPrompt">前往古画修复室…</div>
+				<div id="barNum">100%</div>
 			</div>
 		</div>
-		
-		<audio id="backgroundMusic" loop>
-			<source src="music/1.ogg" type="audio/ogg" />
-			该浏览器版本过旧，不支持audio标签，无法播放音乐。
-		</audio>
 		
 		
 		
