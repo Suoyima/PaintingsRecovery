@@ -300,8 +300,8 @@ html, body{
 .progressbarLight{
 	position: absolute;
 	left: 0%;
-	top: 0%;
-	width: 584px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .progressbarPrompt{
