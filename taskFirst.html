@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="css/taskFirst/style.css" type="text/css" />
-    <title>古画修复室</title>
+    	<meta charset="utf-8" />
+    	<title>洗画</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	
+    	<link rel="stylesheet" href="css/taskFirst/style.css" type="text/css" />
+    	<script src="js/jquery-3.7.1.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <img class="backGround" src="images/Task1/backGround.PNG" alt="背景图">
-            <img class="close_button" src="images/Task1/close_button.PNG" alt="关闭按钮">
-            <img class="title" src="images/Task1/title.png" alt="标题栏">
-            <img class="painting" src="images/Task1/painting.PNG" alt="画">
-            <img class="water" src="images/Task1/water.PNG" alt="水">
-            <img class="dirt" src="images/Task1/dirt.PNG" alt="灰尘">
-            <img class="broken_part" src="images/Task1/broken_parts.PNG" alt="破损部分">
-            <img class="dock" src="images/Task1/dock.PNG" alt="工具栏">
-            <img class="exlplain" src="images/Task1/explain.PNG" alt="说明">
-            <img class="dock_shadow" src="images/Task1/dock_shadow.PNG" alt="阴影">
-            <img class="dock_kettle" src="images/Task1/dock_kettle.png" alt="水壶"  onclick="watering()">
+            <img class="background" src="images/task1/background.png" alt="背景图" />
+			<img class="title" src="images/task1/title.png" alt="标题" />
+			<img id="buttonClose" src="images/task1/buttonClose.png" alt="关闭按钮" />
+			<img id="buttonMusic" src="images/task1/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()" />
+			<img id="buttonPrompt" src="images/task1/buttonPrompt.png" alt="提示按钮" />
+			<img id="breakage" src="images/task1/breakage.png" alt="破损" />
+			<img id="dirt" src="images/task1/dirt.png" alt="污渍" />
+			<img class="toolbarOn" src="images/task1/toolbarOn.png" alt="工具栏" />
+			<img class="toolbarKettle" src="images/task1/toolbarKettle.png" alt="水壶" />
+			<img class="toolbarBrush" src="images/task1/toolbarBrush.png" alt="刷子" />
+			<img class="toolbarTowel" src="images/task1/toolbarTowel.png" alt="水盆毛巾" />
+			<img class="toolbarArrowDown" src="images/task1/toolbarArrowDown.png" alt="箭头向下" />
+			<img class="question" src="images/task1/question.png" alt="任务按钮" />
         </div>
+		
+		<audio id="backgroundMusic" loop>
+			<source src="music/1.ogg" type="audio/ogg" />
+			该浏览器版本过旧，不支持audio标签，无法播放音乐。
+		</audio>
+		
         <script src="js/taskFirst/taskFirst.js"></script>
     </body>
 </html>

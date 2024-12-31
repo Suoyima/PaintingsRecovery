@@ -30,25 +30,9 @@ html, body{
     z-index: 1;
 }
 
-.progressBar{
+#buttonBack{
 	position: absolute;
-	top: 7.5%;
-	left: 4%;
-	width: 31%;
-	z-index: 1;
-}
-
-.close{
-	position: absolute;
-	top: 2.5%;
-	right: 2.5%;
-	width: 20%;
-	z-index: 1;
-}
-
-.buttonPrompt{
-	position: absolute;
-	top: 8%;
+	top: 3%;
 	right: 3.5%;
 	width: 10%;
 	z-index: 1;
@@ -56,7 +40,7 @@ html, body{
 
 #buttonMusic{
 	position: absolute;
-	top: 17%;
+	top: 10%;
 	right: 3.5%;
 	width: 10%;
 	z-index: 1;
@@ -102,6 +86,24 @@ html, body{
 	z-index: 2;
 }
 
+.profileTask{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	max-width: 100%;
+	max-height: 100%;
+	height: 100vh;
+	z-index: 4;
+}
+
+.buttonClose{
+	position: absolute;
+	top: 29%;
+	right: 20%;
+	width: 4.7%;
+	z-index: 4;
+}
+
 @media (max-aspect-ratio: 9/16){
 	.title{
 		position: absolute;
@@ -111,35 +113,19 @@ html, body{
 	    z-index: 1;
 	}
 	
-	.progressBar{
+	#buttonBack{
 		position: absolute;
-		top: 7.5%;
-		left: 4%;
-		width: 39%;
-		z-index: 1;
-	}
-	
-	.close{
-		position: absolute;
-		top: 2.5%;
-		right: 2.5%;
-		width: 30%;
-		z-index: 1;
-	}
-	
-	.buttonPrompt{
-		position: absolute;
-		top: 8%;
+		top: 3%;
 		right: 3.5%;
-		width: 14%;
+		width: 13%;
 		z-index: 1;
 	}
 	
 	#buttonMusic{
 		position: absolute;
-		top: 16%;
+		top: 10%;
 		right: 3.5%;
-		width: 14%;
+		width: 13%;
 		z-index: 1;
 	}
 	
@@ -182,5 +168,22 @@ html, body{
 		right: 1%;
 		width: 36%;
 		z-index: 2;
+	}
+	
+	.buttonClose{
+		top: 29.5%;
+	}
+}
+
+.question{
+	position: absolute;
+	transform: translate(100%);
+	width: 10%;
+	z-index: 3;
+}
+
+@media (max-aspect-ratio: 9/16){
+	.question{
+		transform: translate(100%);
 	}
 }

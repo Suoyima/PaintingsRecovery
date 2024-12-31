@@ -45,7 +45,7 @@ function AnimaAndRedirect() {
     var button = document.querySelector('.buttonStart');
 
     setTimeout(function() {
-        navigateTo('mainPage.html');
+        navigateTo('paintingSelect.html');
     }, 1000);
 }
 
