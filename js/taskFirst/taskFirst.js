@@ -282,6 +282,9 @@ $(document).ready(function(){
 				
 					$('<img>', {
 					    'class': 'progressbarLight',
+						'css': {
+							'width': $('.container').width()*0.83
+						},
 					    'src': 'images/progressbar/barLight.png',
 					    'alt': '进度条'
 					}).appendTo($div);
