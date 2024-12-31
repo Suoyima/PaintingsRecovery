@@ -33,8 +33,8 @@ $(document).ready(function(){
 	$('<img>', {
 	    'class': 'question',
 	    'css': {
-	        'left': taskWaiting.offset().left,
-	        'top': taskWaiting.offset().top
+	        'left': taskWaiting.css('left'),
+	        'top': taskWaiting.css('top')
 	    },
 		'src': 'images/main/question.png',
 		'alt': '跳转按钮'
