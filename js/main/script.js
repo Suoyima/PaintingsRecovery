@@ -3,10 +3,10 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-const selected = getQueryParam('selected');
-const taskCompleted = getQueryParam('taskCompleted');
+var selected = getQueryParam('selected');
+var taskCompleted = getQueryParam('taskCompleted');
 
-// const taskCompleted = 'Second';
+// var taskCompleted = 'Second';
 
 function toggleMusic(){
     var audio = document.getElementById("backgroundMusic");
