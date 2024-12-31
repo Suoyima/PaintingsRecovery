@@ -3,10 +3,10 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-// const selected = getQueryParam('selected');
-const taskCompleted = getQueryParam('taskCompleted');
+var selected = getQueryParam('selected');
+var taskCompleted = getQueryParam('taskCompleted');
 
-const selected = 'paintingFirst';
+// var selected = 'paintingFirst';
 
 var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 var eventType = isTouchDevice ? 'touchend' : 'click';
@@ -146,11 +146,162 @@ $(document).ready(function(){
 	});
 	
 	$('.container').on(eventType, '.kettleShined', function(){
-	    $('<img>', {
-	        'class': 'waterFirst',
-	        'src': 'images/task1/waterFirst.png',
-	        'alt': '水'
-	    }).appendTo('.container');
+	    var $movingImg = $('<img>', {
+	        'src': 'images/task1/kettleWatering.png',
+	        'alt': '浇水的水壶',
+	        'class': 'kettleWatering'
+	    });
+		
+	    $movingImg.appendTo('.container');
+	    
+	    var onAnimationEnd = function() {
+			$movingImg.remove();
+	        $('.kettleShined, .promptKettle').remove();
+	    
+	        $('<img>', {
+	            'class': 'waterFirst',
+	            'src': 'images/task1/waterFirst.png',
+	            'alt': '水'
+	        }).appendTo('.container');
+	    
+	        var additionalImages = [
+	            {
+	                class: 'brushShined',
+	                src: 'images/task1/brushShined.png',
+	                alt: '排刷'
+	            },
+	            {
+	                class: 'promptBrush',
+	                src: 'images/task1/promptBrush.png',
+	                alt: '提示'
+	            }
+	        ];
+	    
+	        $.each(additionalImages, function(index, image) {
+	            $('<img>', {
+	                'class': image.class,
+	                'src': image.src,
+	                'alt': image.alt
+	            }).appendTo('.container');
+	        });
+	    };
+    
+        var animationProperties = {
+            'bottom': '60%',
+            'left': '60%'
+        };
+        var duration = 1500;
+    
+        
+        $movingImg.animate(animationProperties, duration, onAnimationEnd);
+	});
+	
+	$('.container').on(eventType, '.brushShined', function(){
+		var $movingImg = $('<img>', {
+			'src': 'images/task1/brushWorking.png',
+			'alt': '刷东西的排刷',
+			'class': 'brushWorking'
+		});
+				
+		$movingImg.appendTo('.container');
+			    
+		var onAnimationEnd = function() {
+			$movingImg.remove();
+		    $('.brushShined, .promptBrush, #dirt').remove();
+		
+		    var additionalImages = [
+		        {
+		            class: 'towelShined',
+		            src: 'images/task1/towelShined.png',
+		            alt: '水盆毛巾'
+		        },
+		        {
+		            class: 'promptTower',
+		            src: 'images/task1/promptTowel.png',
+		            alt: '提示'
+		        }
+		    ];
+		
+		    $.each(additionalImages, function(index, image) {
+		        $('<img>', {
+		            'class': image.class,
+		            'src': image.src,
+		            'alt': image.alt
+		        }).appendTo('.container');
+		    });
+		};
+		
+		var animationProperties = {
+		    'top': '60%',
+		    'left': '60%'
+		};
+		var duration = 1500;
+		
+		$movingImg.animate(animationProperties, duration, onAnimationEnd);
+	});
+	
+	$('.container').on(eventType, '.towelShined', function(){
+	    $('.waterFirst').fadeOut(800, function() {
+	        $(this).remove();
+	    
+	        var $waterSecond = $('<img>', {
+	            'class': 'waterSecond',
+	            'src': 'images/task1/waterSecond.png',
+	            'alt': '水'
+	        }).hide().appendTo('.container');
+	
+	        $waterSecond.fadeIn(800).delay(500).fadeOut(800, function() {
+	            $(this).remove();
+	
+	            var $waterThird = $('<img>', {
+	                'class': 'waterThird',
+	                'src': 'images/task1/waterThird.png',
+	                'alt': '水'
+	            }).hide().appendTo('.container');
+	
+	            $waterThird.fadeIn(800).delay(500).fadeOut(800, function() {
+	                $(this).remove();
+					
+					var newImages = [
+					    {class: 'backgroundProgressbar', src: 'images/progressbar/background.png', alt: '背景图'},
+					    {class: 'progressbar', src: 'images/progressbar/bar.png', alt: '进度条底'},
+					    {class: 'progressbarPrompt', src: 'images/progressbar/prompt.png', alt: '提示'}
+					];
+				
+					$.each(newImages, function(index, image) {
+					    $('<img>', {
+					        'class': image.class,
+					        'src': image.src,
+					        'alt': image.alt
+					    }).appendTo('.container');
+					});
+				
+					var $div = $('<div>', {
+					    'class': 'viewBox'
+					}).appendTo('.container');
+				
+					$('<img>', {
+					    'class': 'progressbarLight',
+					    'src': 'images/progressbar/barLight.png',
+					    'alt': '进度条'
+					}).appendTo($div);
+					
+					$div.animate({
+					    'width': '10%'
+					}, {
+					    duration: 1500,
+						complete: function(){
+							taskCompleted = "First";
+							window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
+						}
+					});
+	            });
+	        });
+	    });
+	});
+	
+	$('#buttonClose').click(function(){
+		window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
 	});
 	
 });
