@@ -17,10 +17,10 @@ function toggleMusic(){
     
     if (audio.paused) {
         audio.play();
-        button.src = "images/Task1/buttonMusicOn.png";
+        button.src = "images/task1/buttonMusicOn.png";
     } else {
         audio.pause();
-        button.src = "images/Task1/buttonMusicDown.png";
+        button.src = "images/task1/buttonMusicDown.png";
     }
 }
 
