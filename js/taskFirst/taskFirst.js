@@ -307,4 +307,39 @@ $(document).ready(function(){
 		window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
 	});
 	
+	var elementsArray = [];
+	$('.container').on('click', '.toolbarArrowDown', function() {
+	    var selectedElements = $(
+	        'img[class^=toolbar], img[class^=prompt], ' +
+	        '.brushShined, .kettleShined, .towelShined, .question'
+	    );
+		
+	    elementsArray = [];
+	    selectedElements.each(function(){
+	        elementsArray.push($(this).clone(true));
+	        $(this).remove();
+	    });
+	
+	    var imgToolbarDown = $('<img/>', {
+	        'class': 'toolbarDown',
+	        src: 'images/task1/toolbarDown.png'
+	    });
+	    var imgToolbarArrowUp = $('<img/>', {
+	        'class': 'toolbarArrowUp',
+	        src: 'images/task1/toolbarArrowUp.png'
+	    });
+	
+	    $('.container').append(imgToolbarDown, imgToolbarArrowUp);
+	});
+	
+	$('.container').on('click', '.toolbarArrowUp', function() {
+	    for (var i = 0; i < elementsArray.length; i++) {
+	        $('.container').append(elementsArray[i]);
+	    }
+	
+	    $('.toolbarArrowUp, .toolbarDown').remove();
+	
+	    elementsArray.length = 0;
+	});
+	
 });

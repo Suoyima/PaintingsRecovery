@@ -42,26 +42,26 @@ $(document).ready(function(){
 	var $containerBigger = $('.containerBigger');
 	var isDragging = false, isBubbleGenerated = false;
 	var startX, startY, elmX = 0, elmY = 0;
-	var $followImg, $newImg;
+	// var $followImg;
 	$containerBigger.on('touchstart', function(e) {
 	    e.preventDefault();
 	    isDragging = true;
 	    startX = e.originalEvent.touches[0].clientX - elmX;
 	    startY = e.originalEvent.touches[0].clientY - elmY;
 	
-	    $followImg = $('<img src="images/task2/hand.png" alt="手">')
-	        .css({
-	            position: 'absolute',
-	            pointerEvents: 'none',
-	            zIndex: 5
-	        });
-	    $('body').append($followImg);
+	    // $followImg = $('<img src="images/task2/hand.png" alt="手">')
+	    //     .css({
+	    //         position: 'absolute',
+	    //         pointerEvents: 'none',
+	    //         zIndex: 5
+	    //     });
+	    // $('body').append($followImg);
 		
 		if(!isBubbleGenerated){
 			var imgClass = 'bubble';
 			var imgSrc = 'images/task2/bubble.png';
 			var imgAlt = '气泡框';
-			$newImg = $(`<img class="${imgClass}" src="${imgSrc}" alt="${imgAlt}">`)
+			var $newImg = $(`<img class="${imgClass}" src="${imgSrc}" alt="${imgAlt}">`)
 			$containerBigger.append($newImg);
 			$('.prompt').attr('src', 'images/task2/promptSecond.png');
 			isBubbleGenerated = true;
@@ -72,6 +72,8 @@ $(document).ready(function(){
 	});
 	$containerBigger.on('touchmove', function(e) {
 	    if (isDragging) {
+			$('.hand').remove();
+			
 	        e.preventDefault();
 	        elmX = e.originalEvent.touches[0].clientX - startX;
 	        elmY = e.originalEvent.touches[0].clientY - startY;
@@ -90,18 +92,18 @@ $(document).ready(function(){
 	$containerBigger.on('touchend', function() {
 	    isDragging = false;
 	
-	    if ($followImg) {
-	        $followImg.remove();
-	        $followImg = null;
-	    }
+	    // if ($followImg) {
+	    //     $followImg.remove();
+	    //     $followImg = null;
+	    // }
 	});
 	function setPosition(x, y) {
-	    if ($followImg) {
-	        $followImg.css({
-	            left: x,
-	            top: y
-	        });
-	    }
+	    // if ($followImg) {
+	    //     $followImg.css({
+	    //         left: x,
+	    //         top: y
+	    //     });
+	    // }
 	}
 	
 	var profileNum = 0;
