@@ -83,7 +83,7 @@ html, body{
 	z-index: 3;
 }
 
-.toolbarOn{
+.toolbarOn, .toolbarDown{
 	position: absolute;
 	bottom: 0%;
 	left: 0%;
@@ -118,6 +118,14 @@ html, body{
 .toolbarArrowDown{
 	position: absolute;
 	bottom: 17%;
+	right: 9%;
+	width: 9.2%;
+	z-index: 5;
+}
+
+.toolbarArrowUp{
+	position: absolute;
+	bottom: 3%;
 	right: 9%;
 	width: 9.2%;
 	z-index: 5;
@@ -333,6 +341,10 @@ html, body{
 	
 	.toolbarArrowDown{
 		bottom: 12%;
+	}
+	
+	.toolbarArrowUp{
+		bottom: 2%;
 	}
 	
 	.question{

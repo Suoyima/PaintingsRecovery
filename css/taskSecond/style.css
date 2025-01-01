@@ -108,6 +108,27 @@ html, body{
 	z-index: 2;
 }
 
+@keyframes handPrompt{
+	0%, 100%{
+		transform: translateY(0);
+	}
+	25%{
+		transform: translateY(-100%);
+	}
+	75%{
+		transform: translateY(100%);
+	}
+}
+
+.hand{
+	position: absolute;
+	width: 10.3%;
+	right: 20%;
+	bottom: 40%;
+	z-index: 4;
+	animation: handPrompt 2s linear infinite;
+}
+
 .backgroundPop{
 	position: absolute;
 	left: 0%;
