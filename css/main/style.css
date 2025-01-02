@@ -181,9 +181,3 @@ html, body{
 	width: 10%;
 	z-index: 3;
 }
-
-@media (max-aspect-ratio: 9/16){
-	.question{
-		transform: translate(100%);
-	}
-}

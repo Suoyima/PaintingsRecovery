@@ -2,45 +2,38 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>显微镜观察</title>
+		<title>补画</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
 		<link rel="stylesheet" href="css/taskThird/style.css" type="text/css" />
+		<script src="js/jquery-3.7.1.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<img class="background" src="images/task3/background.png" alt="背景图" />
 			<img id="title" src="images/task3/title.png" alt="标题" />
-			<img id="buttonPrompt" src="images/task3/buttonPrompt.png" alt="提示" />
-			<img id="buttonClose" src="images/task3/buttonClose.png" alt="关闭" onclick="navigateToMainPage()" />
+			<img id="buttonClose" src="images/task3/buttonClose.png" alt="关闭按钮"/>
 			<img id="buttonMusic" src="images/task3/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()" />
-			<img id="lensO" src="images/task3/lensO.png" alt="物镜" />
-			<img id="microscope" src="images/task3/microscope.png" alt="显微镜" />
-			<img id="buttonViewOpen" src="images/task3/buttonViewOpen.png" alt="视野开关" />
-			<img id="wheelC" src="images/task3/wheelC.png" alt="粗准焦螺旋" />
-			<img id="wheelF" src="images/task3/wheelF.png" alt="细准焦螺旋" />
-			<div class="pieceBox">
-				<img id="pieceSelectBox" src="images/task3/pieceSelectBox.png" alt="绢选区" />
-				<img id="pieceFirst" src="images/task3/pieceFirst.png" alt="绢一" />
-				<img id="pieceSecond" src="images/task3/pieceSecond.png" alt="绢二" />
-				<img id="pieceThird" src="images/task3/pieceThird.png" alt="绢三" />
-				<img id="pieceFourth" src="images/task3/pieceFourth.png" alt="绢四" />
-			</div>
-			<div class="confirm">
-				<img id="pieceProfile" src="images/task3/pieceProfile.png" alt="绢信息" />
-				<img id="buttonSelect" src="images/task3/buttonSelect.png" alt="选择按钮" />
-				<img id="pieceSelecting" src="images/task3/pieceFirst.png" alt="选中绢" />
-			</div>
-			<img id="view" src="images/task3/viewFirst.png" alt="显微镜视野" />
+			<img id="buttonPrompt" src="images/task3/buttonPrompt.png" alt="提示按钮" />
+			<img class="pieceSelectbar" src="images/task3/pieceSelectbar.png" alt="选取栏" />
+			<img class="prompt" src="images/task3/promptFirst.png" alt="提示" />
+			<img class="lensMid" src="images/task3/lens.png" alt="物镜" />
+			<img class="microscopeMid" src="images/task3/microscope.png" alt="显微镜" />
+			<img class="wheelCMid" src="images/task3/wheelC.png" alt="粗准焦螺旋" />
+			<img class="wheelFMid" src="images/task3/wheelF.png" alt="细准焦螺旋" />
+			<img class="handMid" src="images/task3/hand.png" alt="手" />
 			
 		</div>
+		
 		
 		<audio id="backgroundMusic" loop>
 			<source src="music/1.ogg" type="audio/ogg" />
 			该浏览器版本过旧，不支持audio标签，无法播放音乐。
 		</audio>
 		
-		
+		<audio id="soundWheel" loop>
+			<source src="sound/soundWheel.wav" type="audio/wav" />
+		</audio>
 		
 		<script src="js/taskThird/taskThird.js"></script>
 	</body>

@@ -110,13 +110,13 @@ html, body{
 
 @keyframes handPrompt{
 	0%, 100%{
-		transform: translateY(0);
+		transform: translate(0);
 	}
 	25%{
-		transform: translateY(-100%);
+		transform: translateY(100%) translateX(-100%);
 	}
 	75%{
-		transform: translateY(100%);
+		transform: translateY(-100%) translateX(100%);
 	}
 }
 
