@@ -22,7 +22,7 @@ function toggleMusic(){
 }
 
 $(document).ready(function(){
-	var taskWaiting;
+	var taskWaiting = $('.groupFirst');
 	if (taskCompleted == 'null'){taskWaiting = $('.groupFirst');}
 	if (taskCompleted == 'First')	taskWaiting = $('.groupSecond');
 	if (taskCompleted == 'Second')	taskWaiting = $('.groupThird');
