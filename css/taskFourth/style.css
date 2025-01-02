@@ -1,0 +1,520 @@
+html, body{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	position: relative;
+	width: fit-content;
+	max-width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.background{
+	max-width: 100%;
+	max-height: 100%;
+	height: 100vh;
+}
+
+.title{
+	position: absolute;
+    top: 1%;
+    left: 3%;
+	width: 33%;
+    z-index: 1;
+	height: 8.1%;
+}
+
+.buttonClose{
+	position: absolute;
+	top: 1.5%;
+	right: 3.5%;
+	width: 7%;
+	z-index: 1;
+}
+
+#buttonMusic{
+	position: absolute;
+	top: 1.5%;
+	right: 13%;
+	width: 7%;
+	z-index: 1;
+}
+
+.buttonPrompt{
+	position: absolute;
+	top: 4%;
+	left: 34%;
+	width: 4%;
+	z-index: 2;
+}
+
+.bucket{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    width: 23.3%;
+}
+
+.bowl_and_brush{
+    position: absolute;
+    left: 1%;
+    top: 20%;
+    width: 25.4%;
+}
+
+.painting{
+    position: absolute;
+    width: 69.3%;
+    right: 3.5%;
+    top: 10%;
+    display:none;
+    height: 87.1%;
+}
+
+.dock{
+    position: absolute;
+    left: 3.5%;
+    bottom: 0%;
+    width: 94%;
+    height: 14.4%;
+}
+
+.explain{
+    position: absolute;
+    left: 12%;
+    width: 74%;
+    bottom: 5%;
+
+}
+
+.explain_second{
+    position: absolute;
+    left: 14%;
+    width: 74%;
+    bottom: 6%;
+	display: none;
+}
+
+.prompt_brush{
+    position: absolute;
+    left: 13%;
+    width: 13%;
+    top: 15%;
+
+}
+
+.prompt_bucket{
+    position: absolute;
+    left: 13%;
+    width: 13%;
+    top: 46%;
+	display: none;
+}
+
+.painting_back{
+    position: absolute;
+    width: 69.3%;
+    right: 3.5%;
+    top: 10%;
+    z-index: 1;
+    opacity:1;
+    height: 70%;
+}
+
+.book{
+    position: absolute;
+    width: 74%;
+    z-index: 11;
+    left: 14%;
+    top: 20%;
+    display: none;
+}
+
+.book_back{
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+	left: 0;
+	top:0;
+	display: none;
+}
+
+.arrow{
+	position: absolute;
+	z-index: 11;
+	left: 3%;
+	top: 40%;
+	display: none;
+}
+
+.book_dock{
+	position: absolute;
+    z-index: 11;
+	width: 51%;
+    left: 22%;
+    top: 28%;
+	display: none;
+}
+
+.bowl{
+	position: absolute;
+	z-index: 12;
+	top: 33%;
+	left: 38%;
+	width: 20%;
+	display: none;
+}
+
+.book_bucket{
+	position: absolute;
+	z-index: 12;
+	top: 33%;
+	left: 38%;
+	width: 20%;
+	display: none;
+}
+
+.book_brush{
+	position: absolute;
+	z-index: 12;
+	top: 33%;
+	left: 38%;
+	width: 20%;
+	display: none;
+}
+
+.jianghu{
+	position: absolute;
+	z-index: 13;
+	top: 45.7%;
+	left: 30%;
+	width: 11%;
+	display: none;
+}
+
+.shuazi{
+	position: absolute;
+	z-index: 13;
+	top: 45.7%;
+	left: 30%;
+	width: 11%;
+	display: none;
+}
+
+.mingzhi{
+	position: absolute;
+	z-index: 13;
+	top: 45.7%;
+	left: 30%;
+	width: 11%;
+	display: none;
+}
+
+.bowl_introduction{
+	position: absolute;
+	z-index: 13;
+	top: 48.5%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.paper_explain{
+	position: absolute;
+	z-index: 13;
+	top: 48.5%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.brush_explain{
+	position: absolute;
+	z-index: 13;
+	top: 48.5%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.bowl_function{
+	position: absolute;
+	z-index: 13;
+	top: 53.5%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.brush_function{
+	position: absolute;
+	z-index: 13;
+	top: 53.5%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.paper_function{
+	position: absolute;
+	z-index: 13;
+	top: 52.7%;
+	left: 27%;
+	width: 42%;
+	display: none;
+}
+
+.tip{
+	position: absolute;
+	z-index: 4;
+	top:50%;
+	width: 68%;
+	left: 27%;
+	display: none;
+}
+
+
+.brush{
+	position: absolute;
+	z-index: 3;
+	display: none;
+	top:50%;
+	right: 50%;
+	
+}
+
+.grue{
+	position: absolute;
+	z-index: 3;
+	width: 69.3%;
+    right: 3.5%;
+    top: 10%;
+	height: 70%;
+	opacity:0;
+	transition: opacity 1s;
+}
+
+.paper1{
+	position: absolute;
+	top: 49.5%;
+	z-index: 6;
+	left: 32%;
+	width: 12%;
+	display: none;
+}
+.paper2{
+	position: absolute;
+	top: 50.5%;
+	z-index: 6;
+	left: 44%;
+	width: 12%;
+	display: none;
+}
+.paper3{
+	position: absolute;
+	top: 50.5%;
+	z-index: 6;
+	left: 56%;
+	width: 12%;
+	display: none;
+}
+.paper4{
+	position: absolute;
+	top: 50.7%;
+	z-index: 6;
+	left: 68%;
+	width: 12%;
+	display: none;
+}
+.paper5{
+	position: absolute;
+	top: 50.7%;
+	z-index: 6;
+	left: 80%;
+	width: 12%;
+	display: none;
+}
+
+.choose_button1{
+	position: absolute;
+	top:60%;
+	left: 34%;
+	width: 9.5%;
+	z-index: 4;
+	display: none;
+}
+.choose_button2{
+	position: absolute;
+	top:60%;
+	left: 46%;
+	width: 9.5%;
+	z-index: 4;
+	display: none;
+}
+.choose_button3{
+	position: absolute;
+	top:60%;
+	left: 58%;
+	width: 9.5%;
+	z-index: 4;
+	display: none;
+}
+.choose_button4{
+	position: absolute;
+	top:60%;
+	left: 70%;
+	width: 9.5%;
+	z-index: 4;
+	display: none;
+}
+.choose_button5{
+	position: absolute;
+	top:60%;
+	left: 82%;
+	width: 9.5%;
+	z-index: 4;
+	display: none;
+}
+
+.paper_highlight1{
+	position: absolute;
+	top: 50.7%;
+	z-index: 5;
+	left: 32%;
+	width: 13%;
+	display: none;
+}
+.paper_highlight2{
+	position: absolute;
+	top: 50.7%;
+	z-index: 5;
+	left: 44%;
+	width: 13%;
+	display: none;
+}
+.paper_highlight3{
+	position: absolute;
+	top: 50.7%;
+	z-index: 5;
+	left: 56%;
+	width: 13%;
+	display: none;
+}
+.paper_highlight4{
+	position: absolute;
+	top: 50.7%;
+	z-index: 5;
+	left: 68%;
+	width: 13%;
+	display: none;
+}
+.paper_highlight5{
+	position: absolute;
+	top: 50.7%;
+	z-index: 5;
+	left: 80%;
+	width: 13%;
+	display: none;
+}
+
+.explain1{
+	position: absolute;
+	top: 63%;
+	left: 35%;
+	width: 52%;
+	z-index: 5;
+	display: none;
+}
+.explain2{
+	position: absolute;
+	top: 63%;
+	left: 35%;
+	width: 52%;
+	z-index: 5;
+	display: none;
+}
+.explain3{
+	position: absolute;
+	top: 63%;
+	left: 35%;
+	width: 52%;
+	z-index: 5;
+	display: none;
+}
+.explain4{
+	position: absolute;
+	top: 63%;
+	left: 35%;
+	width: 52%;
+	z-index: 5;
+	display: none;
+}
+.explain5{
+	position: absolute;
+	top: 63%;
+	left: 35%;
+	width: 52%;
+	z-index: 5;
+	display: none;
+}
+
+.new_paper{
+	position: absolute;
+	width: 72%;
+	left: 89%;
+}
+
+@media (max-aspect-ratio: 9/16){
+	.title{
+		width: 40%;
+	}
+	
+	#buttonClose{
+		width: 8%;
+	}
+	
+	#buttonMusic{
+		right: 14%;
+		width: 8%;
+	}
+	
+	#buttonPrompt{
+		left: 37%;
+	}
+	
+	.toolbarArrowDown{
+		bottom: 12%;
+	}
+	
+	.question{
+		bottom: 12%;
+	}
+	
+	.buttonCloseCard{
+		top: 38.5%;
+		right: 20%;
+	}
+	
+	.promptKettle{
+		bottom: 7%;
+	}
+	
+	.brushShined{
+		bottom: 2%;
+	}
+	
+	.promptBrush{
+		bottom: 7%;
+	}
+	
+	.promptTower{
+		bottom: 7%;
+	}
+}
