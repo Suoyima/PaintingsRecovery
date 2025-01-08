@@ -3,13 +3,15 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-// var selected = getQueryParam('selected');
+var selected = getQueryParam('selected');
 var taskCompleted = getQueryParam('taskCompleted');
 
-var selected = 'paintingFirst';
+// var selected = 'paintingFirst';
 
 var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 var eventType = isTouchDevice ? 'touchend' : 'click';
+
+var pieceSelectedClassName;
 
 function toggleMusic(){
     var audio = document.getElementById("backgroundMusic");
@@ -253,6 +255,149 @@ $(document).ready(function(){
 	            'alt': image.alt
 	        }).appendTo('.container');
 	    });
+	});
+	
+	var defaultSrc = {
+	    pieceFirst: 'images/task3/pieceFirst.png',
+	    pieceSecond: 'images/task3/pieceSecond.png',
+	    pieceThird: 'images/task3/pieceThird.png',
+	    pieceFourth: 'images/task3/pieceFourth.png'
+	};
+	var clickedSrc = {
+	    pieceFirst: 'images/task3/pieceFirstSelecting.png',
+	    pieceSecond: 'images/task3/pieceSecondSelecting.png',
+	    pieceThird: 'images/task3/pieceThirdSelecting.png',
+	    pieceFourth: 'images/task3/pieceFourthSelecting.png'
+	};
+	$('.container').on(eventType, '.pieceFirst, .pieceSecond, .pieceThird, .pieceFourth', function(event){
+	    pieceSelectedClassName = $(this).attr('class');
+	    
+	    $.each(defaultSrc, function(key, src){
+	        $('.' + key).attr('src', src);
+	    });
+	
+	    $(this).attr('src', clickedSrc[pieceSelectedClassName]);
+		
+		$('.pieceShowing, .buttonSelect').remove();
+	    var newImages = [
+	        { class: 'pieceShowing', src: `images/task3/${pieceSelectedClassName}Showing.png`, alt: '绢简介' },
+	        { class: 'buttonSelect', src: 'images/task3/buttonSelect.png', alt: '选择按钮' }
+	    ];
+	
+	    $.each(newImages, function(index, image){
+	        $('<img>', {
+	            'class': image.class,
+	            'src': image.src,
+	            'alt': image.alt
+	        }).appendTo('.container');
+	    });
+	});
+	
+	$('.container').on(eventType, '.buttonSelect', function(event){
+	    if (pieceSelectedClassName != `piece${viewNum}`) {
+	        var newImages = [
+	            { class: 'backgroundPop', src: 'images/task3/backgroundPop.png', alt: '弹窗背景' },
+	            { class: 'warningPieceSelect', src: 'images/task3/warningPieceSelect.png', alt: '警告' }
+	        ];
+	
+	        $.each(newImages, function(index, image){
+	            $('<img>', {
+	                'class': image.class,
+	                'src': image.src,
+	                'alt': image.alt
+	            }).appendTo('.container');
+	        });
+	
+	        setTimeout(function() {
+	            $('.backgroundPop, .warningPieceSelect').remove();
+	        }, 3000);
+	    }
+		else{
+			var newImages = [
+			    {class: 'backgroundProgressbar', src: 'images/progressbar/background.png', alt: '背景图'},
+			    {class: 'progressbar', src: 'images/progressbar/bar.png', alt: '进度条底'},
+			    {class: 'progressbarPrompt', src: 'images/progressbar/prompt.png', alt: '提示'},
+				{class: 'painting', src: `images/paintings/${paintingNum}.png`, alt: '画'},
+				{class: 'pieceOnPainting', src: `images/task3/pieceOnPainting${viewNum}.png`, alt: '画上的绢'}
+			];
+							
+			$.each(newImages, function(index, image) {
+			    $('<img>', {
+			        'class': image.class,
+			        'src': image.src,
+			        'alt': image.alt
+			    }).appendTo('.container');
+			});
+							
+			var $div = $('<div>', {
+			    'class': 'viewBox'
+			}).appendTo('.container');
+							
+			$('<img>', {
+			    'class': 'progressbarLight',
+				'css': {
+					'width': $('.container').width()*0.83
+				},
+			    'src': 'images/progressbar/barLight.png',
+			    'alt': '进度条'
+			}).appendTo($div);
+			
+			$div.animate({
+			    'width': '46%'
+			}, {
+			    duration: 1500,
+				complete: function(){
+					taskCompleted = "Third";
+					window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
+				}
+			});
+		}
+	});
+	
+	$('.container').on(eventType, '.microscopeRight, .microscopeMid', function(){
+		var newImages = [
+			{
+				class: 'backgroundPop',
+				src: 'images/task3/backgroundPop.png',
+				alt: '弹窗背景'
+			},
+			{
+				class: 'profileCard',
+				src: 'images/task3/profileCardMicroscope.png',
+				alt: '介绍'
+			}
+		];
+		
+		$.each(newImages, function(index, image){
+			$('<img>', {
+				'class': image.class,
+			    'src': image.src,
+			    'alt': image.alt
+			}).appendTo('.container');
+		});
+	});
+	
+	$('.container').on(eventType, '.pieceShowing', function(){
+		var newImages = [
+			{
+				class: 'backgroundPop',
+				src: 'images/task3/backgroundPop.png',
+				alt: '弹窗背景'
+			},
+			{
+				class: 'profileCard',
+				src: 'images/task3/profileCardPiece.png',
+				alt: '介绍'
+			}
+		];
+		
+		$.each(newImages, function(index, image){
+			$('<img>', {
+				'class': image.class,
+			    'src': image.src,
+			    'alt': image.alt
+			}).appendTo('.container');
+		});
 	});
 	
 });
