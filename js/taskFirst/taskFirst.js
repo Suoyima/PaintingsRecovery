@@ -331,7 +331,6 @@ $(document).ready(function(){
 	
 	    $('.container').append(imgToolbarDown, imgToolbarArrowUp);
 	});
-	
 	$('.container').on('click', '.toolbarArrowUp', function() {
 	    for (var i = 0; i < elementsArray.length; i++) {
 	        $('.container').append(elementsArray[i]);
