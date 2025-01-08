@@ -27,7 +27,7 @@ function toggleMusic(){
 
 $(document).ready(function(){
 	var paintingNum;
-	if(selected=='paintingFirst')	paintingNum = 'first';
+	if(selected=='paintingFirst' || selected == null)	paintingNum = 'first';
 	if(selected=='paintingSecond')	paintingNum = 'second';
 	if(selected=='paintingThird')	paintingNum = 'third';
 	if(selected=='paintingFourth')	paintingNum = 'fourth';
