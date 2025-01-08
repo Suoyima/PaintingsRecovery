@@ -3,10 +3,10 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-// var selected = getQueryParam('selected');
+var selected = getQueryParam('selected');
 var taskCompleted = getQueryParam('taskCompleted');
 
-var selected = 'paintingFirst';
+// var selected = 'paintingFirst';
 
 var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 var eventType = isTouchDevice ? 'touchend' : 'click';
