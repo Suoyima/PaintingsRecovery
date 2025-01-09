@@ -43,5 +43,6 @@ function isWeChatBrowser() {
 window.onload = function() {
     if (isWeChatBrowser()) {
         alert('请复制此页面链接并在浏览器中打开以获得最佳体验。');
+		document.documentElement.style.display = 'none';
     }
 }
