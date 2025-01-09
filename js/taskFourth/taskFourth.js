@@ -37,7 +37,10 @@ var brush_explain=document.querySelector('.brush_explain');
 var brush_function=document.querySelector('.brush_function');
 var arrow=document.querySelector('.arrow');
 var book_dock=document.querySelector('.book_dock');
-var explain_second=document.querySelector('explain_second');
+var explain_second=document.querySelector('.explain_second');
+var painting=document.querySelector('.painting');
+var new_paper=document.querySelector('.new_paper');
+var painting_back=document.querySelector('.painting_back');
 var choose_num=5;
 
 button_prompt.addEventListener('click',function(){
@@ -149,8 +152,192 @@ function toggleMusic(){
 }
 
 choosebutton1.addEventListener('click',function(){
+    paper1.style.display='none';
+    paper2.style.display='none';
+    paper3.style.display='none';
+    paper4.style.display='none';
+    paper5.style.display='none';
+    paper_highlight1.style.display='none';
+    paper_highlight2.style.display='none';
+    paper_highlight3.style.display='none';
+    paper_highlight4.style.display='none';
+    paper_highlight5.style.display='none';
+    choosebutton1.style.display='none';
+    choosebutton2.style.display='none';
+    choosebutton3.style.display='none';
+    choosebutton4.style.display='none';
+    choosebutton5.style.display='none';
+    explain1.style.display='none';
+    explain2.style.display='none';
+    explain3.style.display='none';
+    explain4.style.display='none';
+    explain5.style.display='none';
+    tip.style.display='none';
+    new_paper.src='images/task4/new_paper1.png'
+    painting.style.display='block';
+    new_paper.style.display='block';
+    end()
 
 })
+
+choosebutton2.addEventListener('click',function(){
+    paper1.style.display='none';
+    paper2.style.display='none';
+    paper3.style.display='none';
+    paper4.style.display='none';
+    paper5.style.display='none';
+    paper_highlight1.style.display='none';
+    paper_highlight2.style.display='none';
+    paper_highlight3.style.display='none';
+    paper_highlight4.style.display='none';
+    paper_highlight5.style.display='none';
+    choosebutton1.style.display='none';
+    choosebutton2.style.display='none';
+    choosebutton3.style.display='none';
+    choosebutton4.style.display='none';
+    choosebutton5.style.display='none';
+    explain1.style.display='none';
+    explain2.style.display='none';
+    explain3.style.display='none';
+    explain4.style.display='none';
+    explain5.style.display='none';
+    tip.style.display='none';
+    new_paper.src='images/task4/new_paper2.png'
+    painting.style.display='block';
+    new_paper.style.display='block';
+    end()
+
+})
+
+choosebutton3.addEventListener('click',function(){
+    paper1.style.display='none';
+    paper2.style.display='none';
+    paper3.style.display='none';
+    paper4.style.display='none';
+    paper5.style.display='none';
+    paper_highlight1.style.display='none';
+    paper_highlight2.style.display='none';
+    paper_highlight3.style.display='none';
+    paper_highlight4.style.display='none';
+    paper_highlight5.style.display='none';
+    choosebutton1.style.display='none';
+    choosebutton2.style.display='none';
+    choosebutton3.style.display='none';
+    choosebutton4.style.display='none';
+    choosebutton5.style.display='none';
+    explain1.style.display='none';
+    explain2.style.display='none';
+    explain3.style.display='none';
+    explain4.style.display='none';
+    explain5.style.display='none';
+    tip.style.display='none';
+    new_paper.src='images/task4/new_paper3.png'
+    painting.style.display='block';
+    new_paper.style.display='block';
+    end()
+
+})
+
+choosebutton4.addEventListener('click',function(){
+    paper1.style.display='none';
+    paper2.style.display='none';
+    paper3.style.display='none';
+    paper4.style.display='none';
+    paper5.style.display='none';
+    paper_highlight1.style.display='none';
+    paper_highlight2.style.display='none';
+    paper_highlight3.style.display='none';
+    paper_highlight4.style.display='none';
+    paper_highlight5.style.display='none';
+    choosebutton1.style.display='none';
+    choosebutton2.style.display='none';
+    choosebutton3.style.display='none';
+    choosebutton4.style.display='none';
+    choosebutton5.style.display='none';
+    explain1.style.display='none';
+    explain2.style.display='none';
+    explain3.style.display='none';
+    explain4.style.display='none';
+    explain5.style.display='none';
+    tip.style.display='none';
+    new_paper.src='images/task4/new_paper4.png'
+    painting.style.display='block';
+    new_paper.style.display='block';
+    end()
+
+})
+
+choosebutton5.addEventListener('click',function(){
+    paper1.style.display='none';
+    paper2.style.display='none';
+    paper3.style.display='none';
+    paper4.style.display='none';
+    paper5.style.display='none';
+    paper_highlight1.style.display='none';
+    paper_highlight2.style.display='none';
+    paper_highlight3.style.display='none';
+    paper_highlight4.style.display='none';
+    paper_highlight5.style.display='none';
+    choosebutton1.style.display='none';
+    choosebutton2.style.display='none';
+    choosebutton3.style.display='none';
+    choosebutton4.style.display='none';
+    choosebutton5.style.display='none';
+    explain1.style.display='none';
+    explain2.style.display='none';
+    explain3.style.display='none';
+    explain4.style.display='none';
+    explain5.style.display='none';
+    tip.style.display='none';
+    new_paper.src='images/task4/new_paper5.png'
+    painting.style.display='block';
+    new_paper.style.display='block';
+    end()
+
+})
+
+function end(){
+    painting.style.display='block';
+    painting_back.style.display='none';
+    
+    
+    var newImages = [
+        {class: 'backgroundProgressbar', src: 'images/progressbar/background.png', alt: '背景图'},
+        {class: 'progressbar', src: 'images/progressbar/bar.png', alt: '进度条底'},
+        {class: 'progressbarPrompt', src: 'images/progressbar/prompt.png', alt: '提示'}
+    ];
+                    
+    $.each(newImages, function(index, image) {
+        $('<img>', {
+            'class': image.class,
+            'src': image.src,
+            'alt': image.alt
+        }).appendTo('.container');
+    });
+                    
+    var $div = $('<div>', {
+        'class': 'viewBox'
+    }).appendTo('.container');
+                    
+    $('<img>', {
+        'class': 'progressbarLight',
+        'css': {
+            'width': $('.container').width()*0.83
+        },
+        'src': 'images/progressbar/barLight.png',
+        'alt': '进度条'
+    }).appendTo($div);
+    
+    $div.animate({
+        'width': '63.5%'
+    }, {
+        duration: 1500,
+        complete: function(){
+            taskCompleted = "Fourth";
+            window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
+        }
+    });
+}
 
 function set_grue(){
     var grue = document.querySelector('.grue');
