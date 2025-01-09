@@ -88,8 +88,8 @@ html, body{
 	font-size: 2vh;
 }
 
-@media (max-aspect-ratio: 9/16){
+/* @media (max-aspect-ratio: 9/16){ */
 	#clip-container{
 		top: 13%;
 	}
-}
+/* } */

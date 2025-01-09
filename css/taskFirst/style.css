@@ -321,7 +321,7 @@ html, body{
 	z-index: 8;
 }
 
-@media (max-aspect-ratio: 9/16){
+/* @media (max-aspect-ratio: 9/16){ */
 	.title{
 		width: 40%;
 	}
@@ -371,4 +371,4 @@ html, body{
 	.promptTower{
 		bottom: 7%;
 	}
-}
+/* } */
