@@ -108,7 +108,7 @@ html, body{
 	z-index: 2;
 }
 
-@media (max-aspect-ratio: 9/16){
+/* @media (max-aspect-ratio: 9/16){ */
 	#prompt{
 		bottom: 4%;
 	}
@@ -128,4 +128,4 @@ html, body{
 	#buttonSelectFourth{
 		top: 80%;
 	}
-}
+/* } */

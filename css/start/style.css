@@ -181,7 +181,7 @@ html, body{
     }
 }
 
-@media (max-aspect-ratio: 9/16){
+/* @media (max-aspect-ratio: 9/16){ */
 	
 	#buttonMusic{
 		width: 14%;
@@ -243,4 +243,4 @@ html, body{
 		left: 20%;
 		bottom: 57%;
 	}
-}
+/* } */

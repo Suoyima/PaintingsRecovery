@@ -104,7 +104,7 @@ html, body{
 	z-index: 4;
 }
 
-@media (max-aspect-ratio: 9/16){
+/* @media (max-aspect-ratio: 9/16){ */
 	.title{
 		position: absolute;
 	    top: 2%;
@@ -173,7 +173,7 @@ html, body{
 	.buttonClose{
 		top: 29.5%;
 	}
-}
+/* } */
 
 .question{
 	position: absolute;
