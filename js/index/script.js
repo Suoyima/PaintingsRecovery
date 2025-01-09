@@ -31,3 +31,17 @@ function updateNum(start, end, current, duration) {
 	
     $('#barNum').text(Math.round(Num) + '%');
 }
+
+function isWeChatBrowser() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.indexOf('micromessenger') != -1) {
+        return true;
+    }
+    return false;
+}
+
+window.onload = function() {
+    if (isWeChatBrowser()) {
+        alert('请复制此页面链接并在浏览器中打开以获得最佳体验。');
+    }
+}
