@@ -14,33 +14,6 @@ function isiOS() {
 
 button_left.addEventListener('click', function() {
     
-    if (isAndroid()) {
-      shareImage(); // 如果是安卓设备，使用Web Share API分享图片
-    } else {
-        downloadImage();
-    }
-  });
-
-async function shareImage(){
-    const imageUrl = 'images/call_back/share.png';
-  
-    if (navigator.share) {
-        navigator.share({
-            title: '查看这张图片！', // 分享的标题
-            text: '我发现了一张很棒的照片，想要与你分享！', // 分享的文本
-            url: 'images/call_back/share.png' // 需要分享的图片URL，替换为你的图片URL
-          }).then(() => {
-            console.log('感谢分享！');
-          })
-          .catch(console.error);
-        } else {
-          console.log('当前设备不支持Web Share API。');
-        }
-}
-
-function downloadImage(){
-    
-    // 创建一个隐藏的a标签
     var link = document.createElement('a');
     link.href = 'images/call_back/share.png';
     link.download = 'sharing'; // 指定下载后的文件名
@@ -50,7 +23,7 @@ function downloadImage(){
 
     // 提示用户
     alert('图片已保存到您的设备上！');
-}
+})
 
 button_right.addEventListener('click',function(){
     window.location.href='paintingSelect.html';
