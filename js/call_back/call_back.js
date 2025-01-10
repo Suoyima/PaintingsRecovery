@@ -16,8 +16,8 @@ button_left.addEventListener('click', function() {
     
     if (isAndroid()) {
       shareImage(); // 如果是安卓设备，使用Web Share API分享图片
-    } else if (isiOS() || !navigator.userAgent.match(/mobile/i)) {
-      downloadImage(); // 如果是iOS设备或桌面设备，则下载图片
+    } else {
+        downloadImage();
     }
   });
 
@@ -43,10 +43,11 @@ async function shareImage(){
 }
 
 function downloadImage(){
+    
     // 创建一个隐藏的a标签
     var link = document.createElement('a');
-    link.href = imageUrl;
-    link.download = 'images/call_back/share.png'; // 指定下载后的文件名
+    link.href = 'images/call_back/share.png';
+    link.download = 'sharing'; // 指定下载后的文件名
     document.body.appendChild(link);
     link.click(); // 触发下载
     document.body.removeChild(link); // 下载后移除a标签
