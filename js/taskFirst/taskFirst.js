@@ -38,9 +38,9 @@ $(document).ready(function(){
 	}).appendTo('.container');
 	
 	var profileNum = 0;
-	$('.container').on(eventType, '.backgroundPop, .buttonCloseCard', function(event){
+	$('.container').on(eventType, '.backgroundPop', function(event){
 		profileNum = 0;
-		$('.backgroundPop, .profileBook, .buttonBook, .profileCard, .buttonCloseCard').remove();
+		$('.backgroundPop, .profileBook, .buttonBook, .profileCard').remove();
 	});
 	$('.container').on(eventType, '.buttonBook', function(event){
 		if(0==profileNum){
@@ -103,11 +103,6 @@ $(document).ready(function(){
 				class: 'profileCard',
 				src: `images/task1/profileCard${name}.png`,
 				alt: '介绍'
-			},
-			{
-				class: 'buttonCloseCard',
-				src: 'images/task1/buttonCloseCard.png',
-				alt: '关闭按钮'
 			}
 		];
 		

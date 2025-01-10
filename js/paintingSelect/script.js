@@ -3,19 +3,19 @@ $(document).ready(function() {
         return `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
     }
 
-    $('#buttonSelectFirst').click(function() {
+    $('#paintingFirst').click(function() {
         window.location.href = createUrl('paintingFirst', null);
     });
     
-    $('#buttonSelectSecond').click(function() {
+    $('#paintingSecond').click(function() {
         window.location.href = createUrl('paintingSecond', null);
     });
 
-    $('#buttonSelectThird').click(function() {
+    $('#paintingThird').click(function() {
         window.location.href = createUrl('paintingThird', null);
     });
 
-    $('#buttonSelectFourth').click(function() {
+    $('#paintingFourth').click(function() {
         window.location.href = createUrl('paintingFourth', null);
     });
 });

@@ -48,14 +48,6 @@ $(document).ready(function(){
 	    isDragging = true;
 	    startX = e.originalEvent.touches[0].clientX - elmX;
 	    startY = e.originalEvent.touches[0].clientY - elmY;
-	
-	    // $followImg = $('<img src="images/task2/hand.png" alt="手">')
-	    //     .css({
-	    //         position: 'absolute',
-	    //         pointerEvents: 'none',
-	    //         zIndex: 5
-	    //     });
-	    // $('body').append($followImg);
 		
 		if(!isBubbleGenerated){
 			var imgClass = 'bubble';
@@ -91,19 +83,8 @@ $(document).ready(function(){
 	});
 	$containerBigger.on('touchend', function() {
 	    isDragging = false;
-	
-	    // if ($followImg) {
-	    //     $followImg.remove();
-	    //     $followImg = null;
-	    // }
 	});
 	function setPosition(x, y) {
-	    // if ($followImg) {
-	    //     $followImg.css({
-	    //         left: x,
-	    //         top: y
-	    //     });
-	    // }
 	}
 	
 	var profileNum = 0;
@@ -113,12 +94,10 @@ $(document).ready(function(){
 	});
 	$('.container').on(eventType, '.buttonBook', function(event){
 		if(0==profileNum){
-			// alert(profileNum);
 			$('.profileBook').attr('src', 'images/task2/profileBookTweezer.png');
 			profileNum+=1;
 		}
 		else if(1==profileNum){
-			// alert(profileNum);
 			$('.profileBook').attr('src', 'images/task2/profileBookScrewdriver.png');
 			$('.buttonBook').remove();
 		}
@@ -170,42 +149,45 @@ $(document).ready(function(){
 		
 		$('.breakage, .highlight, .bubble, .prompt').remove();
 		
-		var newImages = [
-		    {class: 'backgroundProgressbar', src: 'images/progressbar/background.png', alt: '背景图'},
-		    {class: 'progressbar', src: 'images/progressbar/bar.png', alt: '进度条底'},
-		    {class: 'progressbarPrompt', src: 'images/progressbar/prompt.png', alt: '提示'}
-		];
-						
-		$.each(newImages, function(index, image) {
-		    $('<img>', {
-		        'class': image.class,
-		        'src': image.src,
-		        'alt': image.alt
-		    }).appendTo('.container');
-		});
-						
-		var $div = $('<div>', {
-		    'class': 'viewBox'
-		}).appendTo('.container');
-						
-		$('<img>', {
-		    'class': 'progressbarLight',
-			'css': {
-				'width': $('.container').width()*0.83
-			},
-		    'src': 'images/progressbar/barLight.png',
-		    'alt': '进度条'
-		}).appendTo($div);
+		setTimeout(function(){
+			var newImages = [
+			    {class: 'backgroundProgressbar', src: 'images/progressbar/background.png', alt: '背景图'},
+			    {class: 'progressbar', src: 'images/progressbar/bar.png', alt: '进度条底'},
+			    {class: 'progressbarPrompt', src: 'images/progressbar/prompt.png', alt: '提示'}
+			];
+							
+			$.each(newImages, function(index, image) {
+			    $('<img>', {
+			        'class': image.class,
+			        'src': image.src,
+			        'alt': image.alt
+			    }).appendTo('.container');
+			});
+							
+			var $div = $('<div>', {
+			    'class': 'viewBox'
+			}).appendTo('.container');
+							
+			$('<img>', {
+			    'class': 'progressbarLight',
+				'css': {
+					'width': $('.container').width()*0.83
+				},
+			    'src': 'images/progressbar/barLight.png',
+			    'alt': '进度条'
+			}).appendTo($div);
+			
+			$div.animate({
+			    'width': '29%'
+			}, {
+			    duration: 1500,
+				complete: function(){
+					taskCompleted = "Second";
+					window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
+				}
+			});
+		}, 1500);
 		
-		$div.animate({
-		    'width': '29%'
-		}, {
-		    duration: 1500,
-			complete: function(){
-				taskCompleted = "Second";
-				window.location.href = `mainPage.html?selected=${encodeURIComponent(selected)}&taskCompleted=${encodeURIComponent(taskCompleted)}`;
-			}
-		});
 	});
 	
 	$('#buttonClose').click(function(){

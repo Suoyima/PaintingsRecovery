@@ -45,8 +45,8 @@ $(document).ready(function(){
     $('.lensMid').css('transform', 'translate(-50%, -50%)');
 	function updateLensPosition() {
 		requestAnimationFrame(function() {
-			if (cumulativeOffset > 25) {
-				cumulativeOffset = 25;
+			if (cumulativeOffset > 20) {
+				cumulativeOffset = 20;
 			} 
 			else if (cumulativeOffset < 0) {
 				cumulativeOffset = 0;
@@ -83,7 +83,7 @@ $(document).ready(function(){
 		
 		$('#soundWheel')[0].pause();
     
-        if (cumulativeOffset == 25 && false == buttonViewOpenMidExisted) {
+        if (cumulativeOffset == 20 && false == buttonViewOpenMidExisted) {
             var backgroundPopImg = $('<img>', {
                 src: 'images/task3/backgroundPop.png',
                 alt: '弹窗背景',
@@ -173,6 +173,7 @@ $(document).ready(function(){
 	        { class: 'wheelCRight', src: 'images/task3/wheelC.png', alt: '粗准焦螺旋' },
 	        { class: 'wheelFRight', src: 'images/task3/wheelF.png', alt: '细准焦螺旋' },
 	        { class: 'handRight', src: 'images/task3/hand.png', alt: '手' },
+			{ class: 'viewBackground', src: 'images/task3/viewBackground.png', alt: '视野背景' },
 			{ class: 'view', src: `images/task3/view${viewNum}.png`, alt: '视野' }
 	    ];
 	

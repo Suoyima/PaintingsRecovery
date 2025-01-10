@@ -6,6 +6,9 @@ function getQueryParam(param) {
 var selected = getQueryParam('selected');
 var taskCompleted = getQueryParam('taskCompleted');
 
+var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+var eventType = isTouchDevice ? 'touchend' : 'click';
+
 function toggleMusic(){
     var audio = document.getElementById("backgroundMusic");
     var button = document.getElementById("buttonMusic");
@@ -52,38 +55,38 @@ $(window).on('load', function() {
         window.location.href = 'paintingSelect.html';
     });
 
-    $('img[class^="group"]').on('click touchend', function() {
-        var className = $(this).attr('class');
-        var taskNum;
-        if(className=="groupFirst"){taskNum = "First";}
-        if(className=="groupSecond"){taskNum = "Second";}
-        if(className=="groupThird"){taskNum = "Third";}
-        if(className=="groupFourth"){taskNum = "Fourth";}
-        if(className=="groupFifth"){taskNum = "Fifth";}
+	$('.container').on(eventType, 'img[class^="group"]', function(){
+		var className = $(this).attr('class');
+		var taskNum;
+		if(className=="groupFirst"){taskNum = "First";}
+		if(className=="groupSecond"){taskNum = "Second";}
+		if(className=="groupThird"){taskNum = "Third";}
+		if(className=="groupFourth"){taskNum = "Fourth";}
+		if(className=="groupFifth"){taskNum = "Fifth";}
+		
+		var newImages = [
+		    { 
+		        class: 'backgroundPop',
+				src: 'images/main/backgroundPop.png',
+				alt: '弹窗背景'
+		    },
+		    { 
+		        class: 'profileTask',
+		        src: 'images/main/profileTask'+taskNum+'.png', 
+		        alt: '介绍' 
+		    }
+		];
+		
+		$.each(newImages, function(index, image) {
+		    $('<img>', {
+		        'class': image.class,
+		        'src': image.src,
+		        'alt': image.alt
+		    }).appendTo('.container');
+		});
+	});
 
-        var newImages = [
-            { 
-                class: 'profileTask', 
-                src: 'images/main/profileTask'+taskNum+'.png', 
-                alt: '介绍' 
-            },
-            { 
-                class: 'buttonClose', 
-                src: 'images/main/buttonClose.png', 
-                alt: '关闭按钮' 
-            }
-        ];
-
-        $.each(newImages, function(index, image) {
-            $('<img>', {
-                'class': image.class,
-                'src': image.src,
-                'alt': image.alt
-            }).appendTo('.container');
-        });
-    });
-
-    $('.container').on('click touchend', '.buttonClose', function() {
-        $('.profileTask, .buttonClose').remove();
+    $('.container').on(eventType, '.backgroundPop', function() {
+        $('.profileTask, .backgroundPop').remove();
     });
 });

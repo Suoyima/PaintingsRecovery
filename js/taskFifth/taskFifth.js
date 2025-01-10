@@ -202,7 +202,19 @@ $(document).ready(function(){
 				class: 'paletteMid',
 				src: 'images/task5/paletteMid.png',
 				alt: '调色板'
-			},
+			}
+		];
+		
+		$.each(newImages, function(index, image) {
+		    $('<img>', {
+				'class': image.class,
+		        'src': image.src,
+		        'alt': image.alt
+		    }).appendTo('.container');
+		});
+	})
+	$('.container').on(eventType, '.paletteMid', function(){
+		var newImages = [
 			{
 				class: 'paintWorking',
 				src: 'images/task5/paintWorking.png',
@@ -217,7 +229,7 @@ $(document).ready(function(){
 		        'alt': image.alt
 		    }).appendTo('.container');
 		});
-	})
+	});
 	$('.container').on(eventType, '.paintWorking', function(){
 		$('.paintWorking, .promptPalette').remove();
 		
