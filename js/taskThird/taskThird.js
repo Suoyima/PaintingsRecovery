@@ -279,9 +279,10 @@ $(document).ready(function(){
 	
 	    $(this).attr('src', clickedSrc[pieceSelectedClassName]);
 		
-		$('.pieceShowing, .buttonSelect').remove();
+		$('.pieceShowing, .pieceInfor, .buttonSelect').remove();
 	    var newImages = [
-	        { class: 'pieceShowing', src: `images/task3/${pieceSelectedClassName}Showing.png`, alt: '绢简介' },
+	        { class: 'pieceShowing', src: `images/task3/${pieceSelectedClassName}Showing.png`, alt: '绢放大' },
+			{ class: 'pieceInfor', src: `images/task3/${pieceSelectedClassName}Infor.png`, alt: '绢简介' },
 	        { class: 'buttonSelect', src: 'images/task3/buttonSelect.png', alt: '选择按钮' }
 	    ];
 	
