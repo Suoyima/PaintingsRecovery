@@ -281,7 +281,7 @@ html, body{
 	position: absolute;
 	left: 30%;
 	bottom: 26%;
-	height: 11%;
+	height: 10%;
 	transform: translate(-50%, -50%);
 	z-index: 6;
 }
