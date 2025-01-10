@@ -280,9 +280,18 @@ html, body{
 .pieceShowing{
 	position: absolute;
 	left: 30%;
-	bottom: 22%;
-	height: 22%;
-	transform: translateX(-50%);
+	bottom: 25%;
+	height: 9%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+}
+
+.pieceInfor{
+	position: absolute;
+	left: 23%;
+	bottom: 14%;
+	width: 27.5%;
+	transform: translate(-50%, -50%);
 	z-index: 6;
 }
 
