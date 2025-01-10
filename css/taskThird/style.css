@@ -280,7 +280,7 @@ html, body{
 .pieceShowing{
 	position: absolute;
 	left: 30%;
-	bottom: 27%;
+	bottom: 26%;
 	height: 11%;
 	transform: translate(-50%, -50%);
 	z-index: 6;
