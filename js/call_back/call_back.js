@@ -25,21 +25,17 @@ async function shareImage(){
     const imageUrl = 'images/call_back/share.png';
   
     if (navigator.share) {
-      try {
-        const file = await fetch(imageUrl).then(r => r.blob());
-        const fileUrl = URL.createObjectURL(file);
-        await navigator.share({
-          title: 'Share Image',
-          text: 'Check out this cool image!',
-          url: fileUrl,
-        });
-        alert('图片已分享，请选择保存到相册。');
-      } catch (error) {
-        alert('分享失败，请重试。');
-      }
-    } else {
-      alert('您的浏览器不支持分享功能。');
-    }
+        navigator.share({
+            title: '查看这张图片！', // 分享的标题
+            text: '我发现了一张很棒的照片，想要与你分享！', // 分享的文本
+            url: 'images/call_back/share.png' // 需要分享的图片URL，替换为你的图片URL
+          }).then(() => {
+            console.log('感谢分享！');
+          })
+          .catch(console.error);
+        } else {
+          console.log('当前设备不支持Web Share API。');
+        }
 }
 
 function downloadImage(){
