@@ -1,3 +1,6 @@
+var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+var eventType = isTouchDevice ? 'touchend' : 'click';
+
 function toggleMusic(){
     var audio = document.getElementById("backgroundMusic");
     var button = document.getElementById("buttonMusic");
@@ -52,7 +55,6 @@ function AnimaAndRedirect() {
 $(document).ready(function() {
     var maxBubbles = 20;
     var bubbleCount = 0;
-
     function createBubble() {
         if (bubbleCount >= maxBubbles) return;
 
@@ -78,6 +80,9 @@ $(document).ready(function() {
             bubbleCount--;
         });
     }
-
     setInterval(createBubble, 500);
+	
+	$(document).on(eventType, '.windchime', function(){
+	    $('#soundWindchime')[0].play();
+	});
 });
