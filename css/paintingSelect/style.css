@@ -6,6 +6,12 @@ html, body{
 	height: 100%;
 }
 
+span{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+
 .container{
 	position: relative;
 	width: fit-content;
