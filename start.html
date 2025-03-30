@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开屏页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="stylesheet" href="css/start/style.css" type="text/css" />
+		<script src="js/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<img class="background" src="images/start/background.png" alt="背景图" />
+			<img id="buttonMusic" src="images/start/buttonMusicDown.png" alt="音乐开关" onclick="toggleMusic()"/>
+			<img id="window" src="images/start/window.png" alt="窗户" />
+			<img id="painting" src="images/start/painting.png" alt="墙上的画" />
+			<img id="table" src="images/start/table.png" alt="桌子" />
+			<img id="kettle" src="images/start/kettle.png" alt="水壶" />
+			<img class="curtainLeft" src="images/start/curtainLeft.png" alt="窗帘左" />
+			<img class="curtainRight" src="images/start/curtainRight.png" alt="窗帘右" />
+			<img class="windchime" src="images/start/windchime.png" alt="风铃" />
+			<img class="buttonStart" src="images/start/buttonStart.png" alt="开始" />
+			<img id="bucket" src="images/start/bucket.png" alt="桶" />
+			<img id="doorLeft" src="images/start/doorLeft.png" alt="左门" />
+			<img id="doorRight" src="images/start/doorRight.png" alt="右门" />
+			<div id="steam-container"></div>
+		</div>
+		
+		<audio id="backgroundMusic" loop>
+			<source src="music/1.ogg" type="audio/ogg" />
+			该浏览器版本过旧，不支持audio标签，无法播放音乐。
+		</audio>
+		
+		<audio id="soundWindchime">
+			<source src="sound/soundWindChime.wav" type="audio/wav" />
+		</audio>
+		
+		<script src="js/start/script.js"></script>
+	</body>
+</html>

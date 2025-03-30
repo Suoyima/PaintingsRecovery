@@ -1,0 +1,645 @@
+[33mcommit 43bdbb4c06344fe6c63f7f8dd278b65c007b8654[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msuoyi[m[33m, [m[1;31morigin/suoyi[m[33m)[m
+Merge: 200934e c4e0607
+Author: Suoyima <1165073607@qq.com>
+Date:   Tue Dec 31 19:00:44 2024 +0800
+
+    总体二
+
+[33mcommit c4e060700e89b3f11856f059d58db6bff9e0d7f6[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:38:26 2024 +0800
+
+    Delete js directory
+
+[33mcommit a582b84757786a4b037fcddc0c118bfa8e9b275f[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:37:29 2024 +0800
+
+    Delete css directory
+
+[33mcommit 16525f357b17a67f03954fb1c10081743d5c40e7[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:36:26 2024 +0800
+
+    Delete taskFirst.html
+
+[33mcommit e28044d001842b2404a873dae253b7bbac5c8738[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:35:53 2024 +0800
+
+    Delete js/taskFirst/taskFirst.js
+
+[33mcommit 1e7222da1fc8db1dcdea11ce3dca9984c41dc4be[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:34:55 2024 +0800
+
+    Delete images/Task1 directory
+
+[33mcommit d30a5ff8ce944dfc15c01eb81ce28d6372ee85eb[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 31 18:33:19 2024 +0800
+
+    Delete css/taskFirst/style.css
+
+[33mcommit 200934e6b57691be06de03eafead009ecaef1617[m
+Author: suoyi <1165073607@qq.com>
+Date:   Tue Dec 31 18:13:13 2024 +0800
+
+    总体二
+
+[33mcommit 96c0dc326915dc4e424a5ccc435a85eb5c0172b4[m
+Merge: 7c37678 096ffe2
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Dec 29 20:06:46 2024 +0800
+
+    Merge pull request #20 from Suoyima/suoyi
+    
+    总体一
+
+[33mcommit 096ffe24cfc8feae5b1bbf2ea8436beeb4a515f7[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Dec 29 20:01:20 2024 +0800
+
+    总体一
+
+[33mcommit 7c3767829dba9df08e1037b898690cbd5a1c95cb[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 17 18:52:41 2024 +0800
+
+    Create static.yml
+
+[33mcommit 5887e6e3e6ec3111ba227251fa650a7542025179[m
+Merge: 3492d95 7f8efcd
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 17 18:41:37 2024 +0800
+
+    Merge pull request #19 from Suoyima/taskThird
+    
+    第十一次补充
+
+[33mcommit 7f8efcd6e28582a4b15561db7785b9f2aed8362f[m
+Merge: 197cffb 3492d95
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Dec 17 18:40:18 2024 +0800
+
+    Merge branch 'main' into taskThird
+
+[33mcommit 197cffbc6212e6f3404c3ae51d01e9bc355bf4e2[m
+Merge: 5b89aa8 9ff76c5
+Author: Suoyima <1165073607@qq.com>
+Date:   Tue Dec 17 18:38:06 2024 +0800
+
+    第十一次补充
+
+[33mcommit 5b89aa8cdd26b029600f8ae76270aeb18da64a05[m[33m ([m[1;32mtaskThird[m[33m)[m
+Author: suoyi <1165073607@qq.com>
+Date:   Tue Dec 17 18:23:57 2024 +0800
+
+    第十一次补充
+
+[33mcommit 3492d9542cb2377c98cce261c39a53a301129919[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Fri Dec 13 14:32:17 2024 +0800
+
+    新修复bug
+
+[33mcommit 9bfb9ecd997f5f2f91fa6c0e0c4502689b42942b[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Fri Dec 13 14:22:43 2024 +0800
+
+    Update style.css
+
+[33mcommit ee68f801093739d6ab61e558ce34cd086b0dd4e5[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Fri Dec 13 14:20:55 2024 +0800
+
+    更新任务一功能
+
+[33mcommit 9788382cd1398145c1dfbebafd7bc66709056bf5[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Fri Dec 13 14:20:10 2024 +0800
+
+    更新布局
+
+[33mcommit d8c5d6e7037555621be17b2808385f9964f0be47[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Fri Dec 13 14:19:15 2024 +0800
+
+    更新任务一图片
+
+[33mcommit 959a8d4fe9437591c3c38a2b0ed5ef32c6ab6d7b[m
+Merge: 457c85e 9ff76c5
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Fri Dec 13 14:17:42 2024 +0800
+
+    Merge pull request #18 from Suoyima/taskThird
+    
+    第十一次补充：改定位
+
+[33mcommit 457c85e68f29c99405392fd96fe55f90f38f2ae3[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Fri Dec 13 14:15:45 2024 +0800
+
+    Add files via upload
+
+[33mcommit 9ff76c547ef76e73882c0f1fc15582206defdebf[m[33m ([m[1;31morigin/taskThird[m[33m)[m
+Author: Suoyima <1165073607@qq.com>
+Date:   Fri Dec 13 14:14:04 2024 +0800
+
+    第十次补充：改定位
+
+[33mcommit 419c6422b2eb63bc3e3ac7e069fa74356698e131[m
+Merge: 68f6772 d1b68b4
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Fri Dec 13 14:10:30 2024 +0800
+
+    Merge pull request #17 from Suoyima/taskThird
+    
+    第十一次补充：添加响应式布局
+
+[33mcommit d1b68b44bc32b603da45179bc0ed6aaa701f9acb[m
+Author: Suoyima <1165073607@qq.com>
+Date:   Fri Dec 13 14:08:27 2024 +0800
+
+    第十一次补充：添加响应式布局
+
+[33mcommit 68f6772b32549e0e2b1bfce0ada94e895e4ec7d7[m
+Merge: c9a62c7 1bd1211
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Fri Dec 13 13:07:35 2024 +0800
+
+    Merge pull request #16 from Suoyima/taskThird
+    
+    第十一次提交：新增任务三界面
+
+[33mcommit 1bd1211e2e43420bd85322b4d024ebe791fe6bb3[m
+Author: suoyi <1165073607@qq.com>
+Date:   Fri Dec 13 13:06:21 2024 +0800
+
+    第十一次提交：新增任务三界面
+
+[33mcommit c9a62c7baee697834617a08d33250a366065d3b6[m
+Merge: 1e3fa79 640037d
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Fri Dec 13 00:45:10 2024 +0800
+
+    Merge pull request #15 from Suoyima/index
+    
+    第十次补充：主界面添加响应式布局
+
+[33mcommit 640037da670d0bd2755b05800d1ab38c75ef5e86[m[33m ([m[1;31morigin/index[m[33m, [m[1;32mindex[m[33m)[m
+Merge: 10d0e64 a09b48d
+Author: suoyi <1165073607@qq.com>
+Date:   Fri Dec 13 00:43:16 2024 +0800
+
+    Merge branch 'index' of https://github.com/Suoyima/PaintingsRecovery into index
+
+[33mcommit 10d0e642b5ea7dc87ac48b4ce8299cd57a350d08[m
+Author: suoyi <1165073607@qq.com>
+Date:   Fri Dec 13 00:42:24 2024 +0800
+
+    第十次补充：主界面添加响应式布局
+
+[33mcommit 1e3fa792fabb8641b1d70b6507303621005a1418[m
+Merge: 4b15abc a09b48d
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Thu Dec 12 23:40:27 2024 +0800
+
+    Merge pull request #14 from Suoyima/index
+    
+    第十次提交：主界面更换素材
+
+[33mcommit a09b48dcbc3c6aa335c789620e1a317a5adf7660[m
+Merge: 0c75ba2 4b15abc
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Thu Dec 12 23:40:17 2024 +0800
+
+    Merge branch 'main' into index
+
+[33mcommit 0c75ba298da01067e95fd413f6aba2ef8f958270[m
+Merge: 1551e8d f0c211d
+Author: suoyi <1165073607@qq.com>
+Date:   Thu Dec 12 23:37:06 2024 +0800
+
+    第十次提交：主界面更换素材
+
+[33mcommit 1551e8dc794a28a23ca1681a5dd117d2b133f9a2[m
+Author: suoyi <1165073607@qq.com>
+Date:   Thu Dec 12 23:27:40 2024 +0800
+
+    第十次提交：主界面更换素材
+
+[33mcommit 4b15abcac2cf6a1a6b8a57a95583365da7db4a60[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Wed Nov 27 19:08:56 2024 +0800
+
+    新增浇水效果和返回主界面
+
+[33mcommit cd4bd6299cfe2db5e20ee63ca5f74456ce14f658[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Wed Nov 27 18:54:42 2024 +0800
+
+    Add files via upload
+    
+    更新浇水效果
+
+[33mcommit 5a8fe8b7187a0bfa04e2d24dee1666a246e173ed[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Wed Nov 27 18:54:04 2024 +0800
+
+    Add files via upload
+    
+    更新浇水效果
+
+[33mcommit 0e19052bcebdd60f64a5e91f4fc1016395e68fb4[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Wed Nov 27 18:53:33 2024 +0800
+
+    Add files via upload
+    
+    更新浇水效果
+
+[33mcommit 1e72a36e71c3515a6a597804dc0f0a3179c3861c[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 18:15:00 2024 +0800
+
+    Add files via upload
+    
+    新增响应式布局
+
+[33mcommit d57b95fd74a7e400330b0f92b62c94fb37db544c[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 18:04:06 2024 +0800
+
+    Add files via upload
+
+[33mcommit 30728a0d43acda19080a2d18b2111eb6e15b05d4[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:37:56 2024 +0800
+
+    Add files via upload
+
+[33mcommit cae12b1114e4eee0683ef270141a0f0c1dafb31d[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:31:43 2024 +0800
+
+    Add files via upload
+
+[33mcommit 6e4a6f9a417e68697dae96cb64703d932d98cb3e[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:26:29 2024 +0800
+
+    Add files via upload
+
+[33mcommit bc9904bd56aef2a255dfdde5de949e770ccc32ae[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:25:59 2024 +0800
+
+    Add files via upload
+
+[33mcommit 70351264706b84b1d5185329ab685cda21d0716a[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:01:30 2024 +0800
+
+    Add files via upload
+
+[33mcommit e9c0d0272a97d168dc77055b9d3e115dd776d432[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 17:00:53 2024 +0800
+
+    Add files via upload
+
+[33mcommit faf7ca40818a35031300668cfdfb5ae3156ff60f[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Tue Nov 26 00:02:04 2024 +0800
+
+    Add files via upload
+
+[33mcommit b873066326fcd25af3c75b86576fbb68e4ba15b2[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Mon Nov 25 23:57:52 2024 +0800
+
+    Add files via upload
+
+[33mcommit b0ac996069e39a640430b5afaf20e86ddc82b38e[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 23:55:05 2024 +0800
+
+    Update mainPage.html
+
+[33mcommit 34725b333cadf1145e12f37a6a571488ba835ad1[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Mon Nov 25 23:49:19 2024 +0800
+
+    Add files via upload
+
+[33mcommit f6326f000e44dad4e842b2aeb3a2732af48fd8c0[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Mon Nov 25 23:48:39 2024 +0800
+
+    Add files via upload
+    
+    新增任务一界面
+
+[33mcommit 3dab6357c89eeced8da188cae4ea3ea0a47c2df0[m
+Merge: 603897d eed0b0e
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 23:48:00 2024 +0800
+
+    Merge pull request #13 from Suoyima/RezeJoy-patch-1
+    
+    Add files via upload
+
+[33mcommit 603897ddf4499ce96b7323e73ba2037cbd6f7109[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Mon Nov 25 23:47:46 2024 +0800
+
+    Add files via upload
+    
+    任务一素材
+
+[33mcommit eed0b0e8622d8e099e787c7b6645f7ed90b8c816[m[33m ([m[1;31morigin/RezeJoy-patch-1[m[33m)[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Mon Nov 25 23:46:26 2024 +0800
+
+    Add files via upload
+
+[33mcommit 709ae22df3d88d2bb92a196dc9431ace50508745[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 23:24:58 2024 +0800
+
+    Update script.js
+
+[33mcommit f0c020bdfda81c36175a101974a26d137898f227[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 23:24:31 2024 +0800
+
+    Update style.css
+
+[33mcommit 5e0086012306cc9430bb3f4548d7ccd8f47a1b82[m
+Author: suoyi <1165073607@qq.com>
+Date:   Mon Nov 25 23:23:02 2024 +0800
+
+    第九次补充：修改图层顺序
+
+[33mcommit dced1ca2b55650937e9252d5e82e9c80ef27275c[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:50:06 2024 +0800
+
+    Update style.css
+
+[33mcommit 5ca258376ad269d2081c90778555ab2d06d33f0e[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:44:54 2024 +0800
+
+    Update style.css
+
+[33mcommit 93a10a0c85e7b4b1fe1bf652e824a24717c71a62[m
+Merge: caffd51 f0c211d
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:42:03 2024 +0800
+
+    Merge pull request #12 from Suoyima/index
+    
+    第九次补充：修正图层顺序
+
+[33mcommit f0c211dbbeed3f304927510952b4b3de8917f810[m
+Merge: 5e68422 caffd51
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:41:56 2024 +0800
+
+    Merge branch 'main' into index
+
+[33mcommit 5e68422d9e83c54ac9f8db89ae692bb39f83f80a[m
+Author: suoyi <1165073607@qq.com>
+Date:   Mon Nov 25 22:33:59 2024 +0800
+
+    第九次补充：修正图层顺序
+
+[33mcommit caffd51b9730361908ab894db601f4243bb5b8e7[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:15:46 2024 +0800
+
+    Update style.css
+
+[33mcommit 2647a6f9eabbe8bd4a4b41d3b869b5c59050aca5[m
+Merge: c7b89a5 1c718aa
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:06:51 2024 +0800
+
+    Merge pull request #11 from Suoyima/index
+    
+    Index
+
+[33mcommit 1c718aa74d7f295928cea8868d6a271f485782ba[m
+Merge: 77a1891 c7b89a5
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Mon Nov 25 22:06:37 2024 +0800
+
+    Merge branch 'main' into index
+
+[33mcommit 77a18916e88b8e40debe8745239c989a1d789f20[m
+Author: suoyi <1165073607@qq.com>
+Date:   Mon Nov 25 22:03:14 2024 +0800
+
+    第九次提交：添加主页面
+
+[33mcommit 8ce4ccd5b5eaab7b53bc7dca5c20611a2b2112b1[m
+Author: suoyi <1165073607@qq.com>
+Date:   Mon Nov 25 21:57:56 2024 +0800
+
+    第九次提交：添加主页面
+
+[33mcommit c7b89a511dbec11d48d88d06542994bdf7492d19[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 23:25:42 2024 +0800
+
+    Update style.css
+
+[33mcommit ccc562657e54e268b8ec58a9b982fb4d5b33abb8[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 23:22:56 2024 +0800
+
+    Update style.css
+
+[33mcommit 909a0ea43fdb4af0ecee567bfeff174a8ffad13d[m
+Merge: 7b02110 ec0d17f
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 23:04:11 2024 +0800
+
+    Merge pull request #10 from Suoyima/mainPage
+    
+    第十一次提交：完善
+
+[33mcommit ec0d17f27d320433801adcf33a0bd4c91c35e89c[m[33m ([m[1;31morigin/mainPage[m[33m, [m[1;32mmainPage[m[33m)[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sat Nov 16 23:03:02 2024 +0800
+
+    第十一次提交：完善
+
+[33mcommit 7b02110333ad4f38b38dc5105f7454cc4b781d7f[m
+Merge: 091e1c4 8494219
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 22:55:58 2024 +0800
+
+    Merge pull request #9 from Suoyima/mainPage
+    
+    第九次提交：完善
+
+[33mcommit 8494219f13813ce47ec8a61321b14867fb190224[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sat Nov 16 22:54:11 2024 +0800
+
+    第九次提交：完善
+
+[33mcommit 091e1c414ea25486c217d38ea0828d4149458fd5[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 22:47:37 2024 +0800
+
+    第八次提交：添加响应式布局，修改比例.html
+
+[33mcommit ba26a1369224bf4cda2b6b457d2db82b7d578bcd[m
+Merge: 47916bb aeb2483
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sat Nov 16 22:45:13 2024 +0800
+
+    Merge pull request #8 from Suoyima/mainPage
+    
+    第八次提交：添加响应式布局，修改比例
+
+[33mcommit aeb24830ce0fdd45b14339380b667ec4d59313b0[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sat Nov 16 22:21:05 2024 +0800
+
+    第八次提交：添加响应式布局，修改比例
+
+[33mcommit 47916bb0a4445c24e0177a671b822b7694c0fef6[m
+Author: RezeJoy <151029467+RezeJoy@users.noreply.github.com>
+Date:   Sat Nov 16 19:04:05 2024 +0800
+
+    Add files via upload
+    
+    新增任务图点击效果
+
+[33mcommit 68ebd9007f59f77b6d6aa29d34efb3b1185913b7[m
+Merge: 72b60e5 0376457
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Nov 5 23:42:43 2024 +0800
+
+    Merge pull request #7 from Suoyima/mainPage
+    
+    第七次提交：修改比例，修改音乐文件名，添加音乐切换图标
+
+[33mcommit 0376457061930f5b07b14a085b0c9e877ebc14e2[m
+Author: suoyi <1165073607@qq.com>
+Date:   Tue Nov 5 23:34:18 2024 +0800
+
+    第七次提交：修改比例，修改音乐文件名，添加音乐切换图标
+
+[33mcommit 72b60e5874604fdb2dd5814438a129f5e08a899e[m
+Merge: 85878d0 beb5329
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Tue Nov 5 12:35:09 2024 +0800
+
+    Merge pull request #6 from Suoyima/mainPage
+    
+    主页面第六次提交：添加跳转
+
+[33mcommit beb532972789a47fbc30ed86e491c98ace9cb5d3[m
+Author: suoyi <1165073607@qq.com>
+Date:   Tue Nov 5 12:33:59 2024 +0800
+
+    主页面第六次提交：添加跳转
+
+[33mcommit 85878d0dcb8b753afd46cd5acdeb632ab1ba9e55[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 23:19:32 2024 +0800
+
+    Update index.html
+
+[33mcommit 0f039777ccbad2671dffb46bb22d4aded1af7c6b[m
+Merge: 99e9519 5d4e96b
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 23:16:58 2024 +0800
+
+    Merge pull request #5 from Suoyima/mainPage
+    
+    主界面第五次提交：添加音乐
+
+[33mcommit 5d4e96b545c67d38aedbe0f80a44975631598512[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 23:15:58 2024 +0800
+
+    主界面第五次提交：添加音乐
+
+[33mcommit 99e95192e4c175c4f536d7a0ab9056202ed38394[m
+Merge: 4e5f33f 8ba528e
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 18:36:33 2024 +0800
+
+    Merge pull request #4 from Suoyima/mainPage
+    
+    主页面第四次提交
+
+[33mcommit 8ba528e674909337132867908c7a031428b55f69[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 18:35:30 2024 +0800
+
+    主页面第四次提交
+
+[33mcommit 4e5f33f5926085309411e0c943c76c9bac367508[m
+Merge: 17e1542 71347e9
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 17:49:02 2024 +0800
+
+    Merge pull request #3 from Suoyima/mainPage
+    
+    主界面第三次提交
+
+[33mcommit 71347e9da9a276404679d66387311b69ce0efe97[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 17:47:37 2024 +0800
+
+    主界面第三次提交
+
+[33mcommit 17e154296fbd3b943f465ae62ded648041fe0dd2[m
+Merge: f4d074f 0966b54
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 15:52:19 2024 +0800
+
+    Merge pull request #2 from Suoyima/mainPage
+    
+    主界面第二次提交
+
+[33mcommit 0966b54e9b8d5c8ae62b39c24c67c59f941ac322[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 15:44:02 2024 +0800
+
+    主界面第二次提交
+
+[33mcommit f4d074febe6ce5bed3b331bb7a3692f3cda7d63e[m
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 15:20:39 2024 +0800
+
+    Create static.yml
+
+[33mcommit d6650105e7a9d96b1c86afda8f14f8cf9d5bccb6[m
+Merge: 5f2fa71 5932541
+Author: suoyi <89726922+Suoyima@users.noreply.github.com>
+Date:   Sun Nov 3 14:44:42 2024 +0800
+
+    Merge pull request #1 from Suoyima/mainPage
+    
+    主界面第一次提交
+
+[33mcommit 59325417765bb3f708e898cc05ec4626d400a39d[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 14:42:47 2024 +0800
+
+    主界面第一次提交
+
+[33mcommit 5f2fa7167916adbebf2292312ca69445c6a6ebdb[m[33m ([m[1;32mmain[m[33m, [m[1;32mfirstPage[m[33m)[m
+Author: suoyi <1165073607@qq.com>
+Date:   Sun Nov 3 14:36:38 2024 +0800
+
+    first commit
