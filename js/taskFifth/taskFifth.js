@@ -159,11 +159,11 @@ $(document).ready(function(){
 	        src: 'images/task1/toolbarArrowUp.png'
 	    });
 	
-	    $('.container').append(imgToolbarDown, imgToolbarArrowUp);
+	    $('.toolbar').append(imgToolbarDown, imgToolbarArrowUp);
 	});
 	$('.container').on('click', '.toolbarArrowUp', function() {
 	    for (var i = 0; i < elementsArray.length; i++) {
-	        $('.container').append(elementsArray[i]);
+	        $('.toolbar').append(elementsArray[i]);
 	    }
 	
 	    $('.toolbarArrowUp, .toolbarDown').remove();
@@ -192,7 +192,7 @@ $(document).ready(function(){
 				'class': image.class,
 		        'src': image.src,
 		        'alt': image.alt
-		    }).appendTo('.container');
+		    }).appendTo('.toolbar');
 		});
 	});
 	
@@ -243,11 +243,6 @@ $(document).ready(function(){
 				class: 'hand',
 				src: 'images/task5/hand.png',
 				alt: '手势提示'
-			},
-			{
-				class: 'promptPaint',
-				src: 'images/task5/promptPaint.png',
-				alt: '提示'
 			}
 		];
 		
@@ -257,6 +252,22 @@ $(document).ready(function(){
 		        'src': image.src,
 		        'alt': image.alt
 		    }).appendTo('.container');
+		});
+		
+		newImages = [
+			{
+				class: 'promptPaint',
+				src: 'images/task5/promptPaint.png',
+				alt: '提示'
+			},
+		];
+		
+		$.each(newImages, function(index, image) {
+		    $('<img>', {
+				'class': image.class,
+		        'src': image.src,
+		        'alt': image.alt
+		    }).appendTo('.toolbar');
 		});
 	});
 	
@@ -276,16 +287,6 @@ $(document).ready(function(){
 	
 	                var newImages = [
 	                    {
-	                        class: 'paintingbrushShined',
-	                        src: 'images/task5/paintingbrushShined.png',
-	                        alt: '画笔'
-	                    },
-	                    {
-	                        class: 'promptPaintingbrush',
-	                        src: 'images/task5/promptPaintingbrush.png',
-	                        alt: '提示'
-	                    },
-	                    {
 	                        class: 'paintingbrushWorking',
 	                        src: 'images/task5/paintingbrushWorking.png',
 	                        alt: '工作中的画笔'
@@ -299,6 +300,27 @@ $(document).ready(function(){
 	                        'alt': image.alt
 	                    }).appendTo('.container');
 	                });
+					
+					newImages = [
+						{
+						    class: 'paintingbrushShined',
+						    src: 'images/task5/paintingbrushShined.png',
+						    alt: '画笔'
+						},
+						{
+						    class: 'promptPaintingbrush',
+						    src: 'images/task5/promptPaintingbrush.png',
+						    alt: '提示'
+						}
+					];
+					
+					$.each(newImages, function(index, image) {
+					    $('<img>', {
+					        'class': image.class,
+					        'src': image.src,
+					        'alt': image.alt
+					    }).appendTo('.toolbar');
+					});
 	            }
 	
 	            currentDragElement.remove();

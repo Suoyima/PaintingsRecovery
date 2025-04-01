@@ -136,7 +136,7 @@ $(document).ready(function(){
 				'class': image.class,
 		        'src': image.src,
 		        'alt': image.alt
-		    }).appendTo('.container');
+		    }).appendTo('.toolbar');
 		});
 	});
 	
@@ -177,7 +177,7 @@ $(document).ready(function(){
 	                'class': image.class,
 	                'src': image.src,
 	                'alt': image.alt
-	            }).appendTo('.container');
+	            }).appendTo('.toolbar');
 	        });
 	    };
     
@@ -222,7 +222,7 @@ $(document).ready(function(){
 		            'class': image.class,
 		            'src': image.src,
 		            'alt': image.alt
-		        }).appendTo('.container');
+		        }).appendTo('.toolbar');
 		    });
 		};
 		
@@ -324,11 +324,11 @@ $(document).ready(function(){
 	        src: 'images/task1/toolbarArrowUp.png'
 	    });
 	
-	    $('.container').append(imgToolbarDown, imgToolbarArrowUp);
+	    $('.toolbar').append(imgToolbarDown, imgToolbarArrowUp);
 	});
 	$('.container').on('click', '.toolbarArrowUp', function() {
 	    for (var i = 0; i < elementsArray.length; i++) {
-	        $('.container').append(elementsArray[i]);
+	        $('.toolbar').append(elementsArray[i]);
 	    }
 	
 	    $('.toolbarArrowUp, .toolbarDown').remove();

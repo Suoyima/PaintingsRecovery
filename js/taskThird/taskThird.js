@@ -108,7 +108,7 @@ $(document).ready(function(){
                 $('.container').append(newImg);
     
                 $('.prompt').attr('src', 'images/task3/promptSecond.png');
-                $('.prompt').css('width', '61.7%');
+                $('.prompt').css('width', '65.2%');
     
                 buttonViewOpenMidExisted = true;
             }, 3000);
@@ -186,7 +186,7 @@ $(document).ready(function(){
 		});
 		
 		$('.prompt').attr('src', 'images/task3/promptThird.png');
-		$('.prompt').css('width', '41.6%');
+		$('.prompt').css('width', '43.9%');
 	});
 	
 	var blurValue = 5;
@@ -242,7 +242,6 @@ $(document).ready(function(){
 	    
 	    var newImages = [
 	        { class: 'pieceSelectPrompt', src: 'images/task3/pieceSelectPrompt.png', alt: '选择提示' },
-	        { class: 'pieceShowingbar', src: 'images/task3/pieceShowingbar.png', alt: '信息栏' },
 	        { class: 'pieceFirst', src: 'images/task3/pieceFirst.png', alt: '绢一' },
 	        { class: 'pieceSecond', src: 'images/task3/pieceSecond.png', alt: '绢二' },
 	        { class: 'pieceThird', src: 'images/task3/pieceThird.png', alt: '绢三' },
@@ -254,8 +253,20 @@ $(document).ready(function(){
 	            'class': image.class,
 	            'src': image.src,
 	            'alt': image.alt
-	        }).appendTo('.container');
+	        }).appendTo('.bar');
 	    });
+		
+		newImages = [
+			{ class: 'pieceShowingbar', src: 'images/task3/pieceShowingbar.png', alt: '信息栏' }
+		];
+		
+		$.each(newImages, function(index, image){
+		    $('<img>', {
+		        'class': image.class,
+		        'src': image.src,
+		        'alt': image.alt
+		    }).appendTo('.showingbar');
+		});
 	});
 	
 	var defaultSrc = {
@@ -291,7 +302,7 @@ $(document).ready(function(){
 	            'class': image.class,
 	            'src': image.src,
 	            'alt': image.alt
-	        }).appendTo('.container');
+	        }).appendTo('.showingbar');
 	    });
 	});
 	
