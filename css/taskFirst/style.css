@@ -26,7 +26,7 @@ html, body{
 	position: absolute;
     top: 1%;
     left: 3%;
-	width: 33%;
+	width: 40%;
     z-index: 1;
 }
 
@@ -34,22 +34,22 @@ html, body{
 	position: absolute;
 	top: 1.5%;
 	right: 3.5%;
-	width: 7%;
+	width: 8%;
 	z-index: 1;
 }
 
 #buttonMusic{
 	position: absolute;
 	top: 1.5%;
-	right: 13%;
-	width: 7%;
+	right: 14%;
+	width: 8%;
 	z-index: 1;
 }
 
 #buttonPrompt{
 	position: absolute;
 	top: 2.5%;
-	left: 30.5%;
+	left: 37%;
 	width: 3.5%;
 	z-index: 2;
 }
@@ -83,8 +83,17 @@ html, body{
 	z-index: 3;
 }
 
+.toolbar{
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	line-height: 0px;
+	z-index: 4;
+}
+
 .toolbarOn, .toolbarDown{
-	position: absolute;
+	position: relative;
 	bottom: 0%;
 	left: 0%;
 	width: 100%;
@@ -93,7 +102,7 @@ html, body{
 
 .toolbarKettle{
 	position: absolute;
-	bottom: 1%;
+	bottom: 5%;
 	left: 10%;
 	width: 20.5%;
 	z-index: 4;
@@ -101,7 +110,7 @@ html, body{
 
 .toolbarBrush{
 	position: absolute;
-	bottom: 1%;
+	bottom: 5%;
 	left: 40%;
 	width: 17.7%;
 	z-index: 4;
@@ -109,7 +118,7 @@ html, body{
 
 .toolbarTowel{
 	position: absolute;
-	bottom: 1%;
+	bottom: 5%;
 	right: 4%;
 	width: 30.3%;
 	z-index: 4;
@@ -133,7 +142,7 @@ html, body{
 
 .question{
 	position: absolute;
-	bottom: 17%;
+	bottom: 70%;
 	left: 14%;
 	width: 10%;
 	z-index: 5;
@@ -178,7 +187,7 @@ html, body{
 
 .buttonCloseCard{
 	position: absolute;
-	top: 34%;
+	top: 38.5%;
 	right: 20%;
 	width: 4.7%;
 	z-index: 8;
@@ -186,7 +195,7 @@ html, body{
 
 .kettleShined{
 	position: absolute;
-	bottom: 1%;
+	bottom: 5%;
 	left: 17%;
 	width: 22.5%;
 	z-index: 4;
@@ -194,7 +203,7 @@ html, body{
 
 .promptKettle{
 	position: absolute;
-	bottom: 9.5%;
+	bottom: 45%;
 	right: 35%;
 	transform: translate(50%,50%);
 	width: 36.6%;
@@ -222,7 +231,7 @@ html, body{
 
 .brushShined{
 	position: absolute;
-	bottom: 3%;
+	bottom: 10%;
 	left: 17%;
 	width: 22.5%;
 	z-index: 4;
@@ -230,7 +239,7 @@ html, body{
 
 .promptBrush{
 	position: absolute;
-	bottom: 9.5%;
+	bottom: 45%;
 	right: 35%;
 	transform: translate(50%,50%);
 	width: 36.6%;
@@ -260,7 +269,7 @@ html, body{
 
 .towelShined{
 	position: absolute;
-	bottom: 1.5%;
+	bottom: 10.5%;
 	left: 17%;
 	width: 29%;
 	z-index: 4;
@@ -268,7 +277,7 @@ html, body{
 
 .promptTower{
 	position: absolute;
-	bottom: 9.5%;
+	bottom: 45%;
 	right: 35%;
 	transform: translate(50%,50%);
 	width: 31.4%;
@@ -320,47 +329,3 @@ html, body{
 	transform: translate(-50%, -50%);
 	z-index: 8;
 }
-
-/* @media (max-aspect-ratio: 9/16){ */
-	.title{
-		width: 40%;
-	}
-	
-	#buttonClose{
-		width: 8%;
-	}
-	
-	#buttonMusic{
-		right: 14%;
-		width: 8%;
-	}
-	
-	#buttonPrompt{
-		left: 37%;
-	}
-	
-	.question{
-		bottom: 12%;
-	}
-	
-	.buttonCloseCard{
-		top: 38.5%;
-		right: 20%;
-	}
-	
-	.promptKettle{
-		bottom: 7%;
-	}
-	
-	.brushShined{
-		bottom: 2%;
-	}
-	
-	.promptBrush{
-		bottom: 7%;
-	}
-	
-	.promptTower{
-		bottom: 7%;
-	}
-/* } */
