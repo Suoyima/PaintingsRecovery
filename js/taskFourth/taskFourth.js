@@ -42,76 +42,41 @@ var painting=document.querySelector('.painting');
 var new_paper=document.querySelector('.new_paper');
 var painting_back=document.querySelector('.painting_back');
 var choose_num=5;
+var jianghu_introduction=document.querySelector('.jianghu_introduction');
+var shuazi_introduction=document.querySelector('.shuazi_introduction');
+var mingzhi_introduction=document.querySelector('.mingzhi_introduction');
 
 button_prompt.addEventListener('click',function(){
     book.style.display='block';
     book_back.style.display='block';
+    arrow.style.display='block';
     choose_num=1
     numcount();
 })
 
 function numcount(){
     if(choose_num==1){
-        book_dock.style.display='block';
-        arrow.style.display='block';
-        bowl.style.display='block';
-        jianghu.style.display='block';
-        bowl_introduction.style.display='block';
-        bowl_function.style.display='block';
-        book_bucket.style.display='none';
-        mingzhi.style.display='none';
-        paper_function.style.display='none';
-        paper_explain.style.display='none';
-        book_brush.style.display='none';
-        shuazi.style.display='none';
-        brush_explain.style.display='none';
-        brush_function.style.display='none';
+        mingzhi_introduction.style.display='block';
+        shuazi_introduction.style.display='none';
+        jianghu_introduction.style.display='none';
     }
     if(choose_num==2){
-        bowl.style.display='none';
-        jianghu.style.display='none';
-        bowl_introduction.style.display='none';
-        bowl_function.style.display='none';
-        book_bucket.style.display='block';
-        mingzhi.style.display='block';
-        paper_function.style.display='block';
-        paper_explain.style.display='block';
-        book_brush.style.display='none';
-        shuazi.style.display='none';
-        brush_explain.style.display='none';
-        brush_function.style.display='none';
+        mingzhi_introduction.style.display='none';
+        shuazi_introduction.style.display='block';
+        jianghu_introduction.style.display='none';
     }
     if(choose_num==3){
-        bowl.style.display='none';
-        jianghu.style.display='none';
-        bowl_introduction.style.display='none';
-        bowl_function.style.display='none';
-        book_bucket.style.display='none';
-        mingzhi.style.display='none';
-        paper_function.style.display='none';
-        paper_explain.style.display='none';
-        book_brush.style.display='block';
-        shuazi.style.display='block';
-        brush_explain.style.display='block';
-        brush_function.style.display='block';
+        mingzhi_introduction.style.display='none';
+        shuazi_introduction.style.display='none';
+        jianghu_introduction.style.display='block';
     }
     if(choose_num==5){
-        bowl.style.display='none';
-        jianghu.style.display='none';
-        bowl_introduction.style.display='none';
-        bowl_function.style.display='none';
-        book_bucket.style.display='none';
-        mingzhi.style.display='none';
-        paper_function.style.display='none';
-        paper_explain.style.display='none';
-        book_brush.style.display='none';
-        shuazi.style.display='none';
-        brush_explain.style.display='none';
-        brush_function.style.display='none';
+        mingzhi_introduction.style.display='none';
+        shuazi_introduction.style.display='none';
+        jianghu_introduction.style.display='none';
         book.style.display='none';
         book_back.style.display='none';
         arrow.style.display='none';
-        book_dock.style.display='none';    
     }
     if(choose_num==4){
         choose_num=1;
