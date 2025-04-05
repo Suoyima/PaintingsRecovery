@@ -155,122 +155,9 @@ html, body{
 	display: none;
 }
 
-.book_dock{
-	position: absolute;
-    z-index: 11;
-	width: 51%;
-    left: 22%;
-    top: 28%;
-	display: none;
-}
 
-.bowl{
-	position: absolute;
-	z-index: 12;
-	top: 33%;
-	left: 38%;
-	width: 20%;
-	display: none;
-}
 
-.book_bucket{
-	position: absolute;
-	z-index: 12;
-	top: 33%;
-	left: 38%;
-	width: 20%;
-	display: none;
-}
 
-.book_brush{
-	position: absolute;
-	z-index: 12;
-	top: 33%;
-	left: 38%;
-	width: 20%;
-	display: none;
-}
-
-.jianghu{
-	position: absolute;
-	z-index: 13;
-	top: 45.7%;
-	left: 30%;
-	width: 11%;
-	display: none;
-}
-
-.shuazi{
-	position: absolute;
-	z-index: 13;
-	top: 45.7%;
-	left: 30%;
-	width: 11%;
-	display: none;
-}
-
-.mingzhi{
-	position: absolute;
-	z-index: 13;
-	top: 45.7%;
-	left: 30%;
-	width: 11%;
-	display: none;
-}
-
-.bowl_introduction{
-	position: absolute;
-	z-index: 13;
-	top: 48.5%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
-
-.paper_explain{
-	position: absolute;
-	z-index: 13;
-	top: 48.5%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
-
-.brush_explain{
-	position: absolute;
-	z-index: 13;
-	top: 48.5%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
-
-.bowl_function{
-	position: absolute;
-	z-index: 13;
-	top: 53.5%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
-
-.brush_function{
-	position: absolute;
-	z-index: 13;
-	top: 53.5%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
-
-.paper_function{
-	position: absolute;
-	z-index: 13;
-	top: 52.7%;
-	left: 27%;
-	width: 42%;
-	display: none;
-}
 
 .tip{
 	position: absolute;
@@ -520,6 +407,36 @@ html, body{
 	width: 83%;
 	transform: translate(-50%, -50%);
 	z-index: 12;
+}
+
+.jianghu_introduction{
+	display: none;
+	position: absolute;
+	width: 51%;
+	height: 33%;
+	left: 23.75%;
+	top: 27.6%;
+	z-index: 100;
+}
+
+.shuazi_introduction{
+	display: none;
+	position: absolute;
+	width: 51%;
+	height: 33%;
+	left: 23.75%;
+	top: 27.6%;
+	z-index: 100;
+}
+
+.mingzhi_introduction{
+	display: none;
+	position: absolute;
+	width: 51%;
+	height: 33%;
+	left: 23.75%;
+	top: 25.6%;
+	z-index: 100;
 }
 
 @media (max-aspect-ratio: 9/16){
